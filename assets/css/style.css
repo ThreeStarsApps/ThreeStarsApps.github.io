@@ -1,0 +1,256 @@
+/* Fonts  */
+
+@font-face {
+    font-family: 'SamsungOne';
+    src: url('../fonts/samsung_one_regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungSharpSansRegular';
+    src: url('../fonts/samsung_sharp_sans_regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungSharpSansBold';
+    src: url('../fonts/samsung_sharp_sans_bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* General Styling */
+
+body {
+    font-family: 'SamsungOne', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+h1 {
+    font-family: 'SamsungSharpSansBold', sans-serif;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'SamsungSharpSansRegular', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.policy-info {
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+
+.policy-heading {
+    font-family: 'SamsungSharpSansRegular', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Landing Page Layout */
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: transform 0.2s;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+}
+
+.app-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+    font-family: 'SamsungSharpSansBold', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.app-description {
+    font-size: 0.95rem;
+    color: #5f6368;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.btn-custom {
+    font-family: 'SamsungOne', sans-serif;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background-color: #202124;
+    color: white;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-custom:hover {
+    background-color: #3c4043;
+    color: white;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #202124;
+    color: white;
+    font-size: 1.25rem;
+    line-height: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-icon i {
+    display: inline-block;
+    line-height: 1;
+}
+
+.btn-icon:hover {
+    background-color: #3c4043;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn-link {
+    color: #202124;
+    font-weight: 600;
+}
+
+.btn-link:hover {
+    color: #3c4043;
+}
+
+[aria-expanded="true"] .bi-chevron-down {
+    transform: rotate(180deg);
+}
+
+.bi-chevron-down {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .collapse:not(.show) {
+        display: block !important;
+    }
+
+    [data-bs-toggle="collapse"] {
+        display: none !important;
+    }
+
+    .collapse-content {
+        border-top: none !important;
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+}
+
+.collapse-content h5, .collapse-content h6 {
+    font-family: 'SamsungSharpSansBold', sans-serif;
+    margin-top: 15px;
+}
+
+.collapse-content ul {
+    margin-bottom: 15px;
+}
+
+.img-thumbnail-custom {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.img-thumbnail-custom:hover {
+    transform: scale(1.05);
+}
+
+.btn-disabled {
+    background-color: #e8eaed !important;
+    color: #9aa0a6 !important;
+    cursor: not-allowed;
+    border: none;
+}
+
+.btn-disabled:hover {
+    background-color: #e8eaed !important;
+    color: #9aa0a6 !important;
+}
+
+/* Image Modal */
+
+#imageModal {
+    cursor: zoom-out;
+}
+
+#modalImage {
+    max-height: 90vh;
+}
+
+.modal-dialog-centered.modal-lg {
+    max-width: 90%;
+}
+
+#imageModal .btn-close {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#imageModal .btn-close:hover {
+    opacity: 1;
+}
+
+#imageModal .modal-body {
+    background-color: transparent;
+}
