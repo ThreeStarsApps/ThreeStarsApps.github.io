@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support page for KeyStar.">
+    <title>KeyStar Support</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-5.3.8.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        #supportAccordion .accordion-header {
+            margin: 0;
+        }
+
+        #supportAccordion .accordion-button:not(.collapsed) {
+            color: inherit;
+            background-color: #fff;
+            box-shadow: none;
+        }
+
+        #supportAccordion .accordion-button:focus {
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1>KeyStar Support</h1>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            <div class="accordion shadow-sm" id="supportAccordion">
+
+                <!-- Q1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button aria-controls="collapseOne" aria-expanded="false"
+                                class="accordion-button collapsed" data-bs-target="#collapseOne"
+                                data-bs-toggle="collapse" type="button">
+                            What devices does KeyStar support?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingOne" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseOne">
+                        <div class="accordion-body">
+                            KeyStar supports any device running One UI 4 (based on Android 12) and later. This will
+                            mainly be Samsung devices from 2019 and later, but non-Samsung devices running
+                            One UI custom ROMs should also be supported.<br/><br/>
+                            Note that some features might not be supported on certain Android versions. For example, the
+                            Back button cannot be mapped on Android 16.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+                            Why does KeyStar require so many permissions?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingTwo" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseTwo">
+                        <div class="accordion-body">
+                            KeyStar only strictly requires the "Notifications" and "Read Logs" permissions to function.
+                            All other permissions are optional and are only requested when you attempt to use specific
+                            features. The app provides clear explanations for why each optional permission is needed
+                            when you enable those features.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+                            Can KeyStar start automatically on boot?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingThree" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseThree">
+                        <div class="accordion-body">
+                            Yes, KeyStar can start on boot. Ensure that the "Start on boot" option is enabled in the app
+                            settings.<br/><br/>
+                            On devices running Android 12 or earlier, no further action is needed. For Android 13 and
+                            later, to allow KeyStar to start on boot without requiring you to manually grant one-time
+                            log access, you must set up Shizuku (see the <strong>How can I set up Shizuku?</strong>
+                            section). With Shizuku set up, it will automatically start on boot once your device is
+                            connected to a Wi-Fi network.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button aria-controls="collapseFour" aria-expanded="false"
+                                class="accordion-button collapsed" data-bs-target="#collapseFour"
+                                data-bs-toggle="collapse" type="button">
+                            How can I disable the "Bixby is disabled" message when pressing the side button?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingFour" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseFour">
+                        <div class="accordion-body">
+                            It should be possible to disable this message by using RegiStar to map the side button to do
+                            nothing.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button aria-controls="collapseFive" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseFive" data-bs-toggle="collapse" type="button">
+                            What is the standard press delay?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingFive" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseFive">
+                        <div class="accordion-body">
+                            The standard press delay is the amount of time you have to press a button again to advance
+                            to the next slot (e.g., from a single to a double press). For example, if you have an action
+                            assigned to a single and double press, and the standard press delay is 250ms, you will have
+                            250ms after the first press to press the button again to trigger the double press action. If
+                            the time expires, the single press action will trigger instead. Note that the last assigned
+                            action in a sequence (in this case, the double press) is executed instantly without waiting
+                            for the delay to expire.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button aria-controls="collapseSix" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseSix" data-bs-toggle="collapse" type="button">
+                            What is the long press delay?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingSix" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseSix">
+                        <div class="accordion-body">
+                            The long press delay is the amount of time you must hold a button for it to register as a
+                            long press. For example, suppose you have an action assigned to a triple long press, with a
+                            standard press delay of 250ms and a long press delay of 300ms. To trigger this action, you
+                            must press the button for less than 300ms, then within 250ms press it again for less than
+                            300ms, and finally, within another 250ms, hold the button for at least 300ms.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button aria-controls="collapseSeven" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseSeven" data-bs-toggle="collapse" type="button">
+                            I can't use the volume buttons to take photos or dismiss alarms anymore.
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingSeven" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseSeven">
+                        <div class="accordion-body">
+                            If an app uses the volume buttons for its own functions, you can add that app to the
+                            "Excluded apps" list in KeyStar settings. When an excluded app is in the foreground, KeyStar
+                            will allow the volume buttons to pass through normally and not perform any
+                            actions. By default, the Samsung Camera and Clock are excluded.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button aria-controls="collapseEight" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseEight" data-bs-toggle="collapse" type="button">
+                            I can't use the lock screen context with the Side Button because I accidentally unlock the
+                            device.
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingEight" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseEight">
+                        <div class="accordion-body">
+                            If your device has a fingerprint scanner on the Side Button, you may accidentally unlock
+                            your device while trying to trigger a lock screen action. To solve this, you can enable the
+                            "Persist lockscreen context" option in KeyStar settings. This provides a 2-second window
+                            after unlocking your device during which the lock screen context remains active. If a Side
+                            Button action is triggered within this window, your device will also be locked again
+                            automatically.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q9 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                        <button aria-controls="collapseNine" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseNine" data-bs-toggle="collapse" type="button">
+                            How can I use apps in my Secure Folder or Work Profile with KeyStar?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingNine" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseNine">
+                        <div class="accordion-body">
+                            You can use apps located in a Secure Folder or Work Profile with KeyStar. To do this,
+                            KeyStar must only be installed on your primary user profile.<br/><br/>
+                            If the target app can also be installed on your primary profile, install it there, configure
+                            your KeyStar actions, and then uninstall the app from the primary profile. Your
+                            configuration will remain and can still be modified in the future.<br/><br/>
+                            If the app cannot be installed on your primary profile, set up your desired KeyStar
+                            configuration using a dummy app. Export your configuration using the "Backup" option in
+                            settings, open the backup file, and replace all instances of the dummy app's package name
+                            with the package name of the app in your Secure Folder or Work Profile. Finally, restore the
+                            modified configuration.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q10 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTen">
+                        <button aria-controls="collapseTen" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseTen" data-bs-toggle="collapse" type="button">
+                            When the screen is completely off, using the volume buttons still changes the volume.
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingTen" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseTen">
+                        <div class="accordion-body">
+                            It is currently not possible to prevent the volume buttons from changing the device volume
+                            when the screen is completely off (Always On Display disabled). As a workaround, you
+                            can enable the "Restore volume" setting in KeyStar. This will automatically restore your
+                            volume to its previous level after an action is triggered in this scenario.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q11 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEleven">
+                        <button aria-controls="collapseEleven" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseEleven" data-bs-toggle="collapse" type="button">
+                            Can I create my own actions?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingEleven" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseEleven">
+                        <div class="accordion-body">
+                            Yes, you can use the "Tasker Task" action to trigger any task you have
+                            created in Tasker, allowing for limitless possibilities.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q12 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwelve">
+                        <button aria-controls="collapseTwelve" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseTwelve" data-bs-toggle="collapse" type="button">
+                            Can I switch KeyStar configurations based on specific conditions?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingTwelve" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseTwelve">
+                        <div class="accordion-body">
+                            Yes, KeyStar has Tasker Plugin support. This allows you to Enable, Disable, Backup, and
+                            Restore KeyStar from Tasker. For example, you can create a Tasker profile that automatically
+                            restores a specific KeyStar configuration whenever your device enters Power Saving mode.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q13 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThirteen">
+                        <button aria-controls="collapseThirteen" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#collapseThirteen" data-bs-toggle="collapse" type="button">
+                            KeyStar randomly stops working and I have to turn it on manually.
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingThirteen" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseThirteen">
+                        <div class="accordion-body">
+                            This typically happens when your device's operating system kills the KeyStar background
+                            process due to memory management or battery optimization, even if your device has plenty of
+                            free memory. To prevent this, grant KeyStar the "Ignore Battery Optimisations"
+                            permission and set up Shizuku (see the <strong>How can I set up Shizuku?</strong> section).
+                            Additionally, it is also recommended to enable KeyStar in Tasker's "Keep Accessibility
+                            Running" setting.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q14 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFourteen">
+                        <button aria-controls="collapseFourteen" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#collapseFourteen" data-bs-toggle="collapse" type="button">
+                            How can I set up Shizuku?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingFourteen" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseFourteen">
+                        <div class="accordion-body">
+                            It is highly recommended to use the "Run logcat through Shizuku" option in KeyStar settings.
+                            Properly configuring Shizuku ensures that KeyStar survives being killed by the operating
+                            system, eliminating the need for manual restarts. Additionally, you will no longer need to
+                            grant one-time log access when enabling the service, which also allows KeyStar to
+                            start on boot without manual intervention.<br/><br/>
+                            Follow these steps to set up KeyStar with Shizuku:
+                            <ol class="mt-2 mb-0">
+                                <li>Download and install the latest Shizuku fork by thedjchi from <a
+                                        href="https://github.com/thedjchi/Shizuku/releases" target="_blank">here</a>.
+                                </li>
+                                <li>Once installed, start Shizuku using Wireless Debugging.</li>
+                                <li>In Shizuku settings, enable <strong>Start on boot</strong>,
+                                    <strong>Watchdog</strong>, and <strong>TCP mode</strong>.
+                                </li>
+                                <li>In KeyStar, enable <strong>Run logcat through Shizuku</strong>.</li>
+                                <li>Turn KeyStar off and then back on.</li>
+                            </ol>
+                            <br/>
+                            If done correctly, you will no longer see the one-time log access dialog when turning on
+                            KeyStar.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Developer Button -->
+            <div class="text-center mt-5">
+                <p class="mb-3">Still have questions or need further assistance?</p>
+                <a href="mailto:threestarsapps@gmail.com" class="btn btn-custom px-4 py-2">
+                    <i class="bi bi-envelope me-2"></i> Contact Developer
+                </a>
+                <div class="mt-4">
+                    <a href="../" class="text-decoration-none btn-link"><i class="bi bi-arrow-left me-1"></i> Back to
+                        Home</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="../assets/js/bootstrap-5.3.8.js"></script>
+</body>
+</html>
