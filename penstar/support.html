@@ -165,17 +165,21 @@
                         <button aria-controls="collapseSeven" aria-expanded="false"
                                 class="accordion-button collapsed"
                                 data-bs-target="#collapseSeven" data-bs-toggle="collapse" type="button">
-                            PenStar randomly stops working and I have to turn it on manually.
+                            PenStar randomly stops working and I have to restart it manually.
                         </button>
                     </h2>
                     <div aria-labelledby="headingSeven" class="accordion-collapse collapse"
                          data-bs-parent="#supportAccordion" id="collapseSeven">
                         <div class="accordion-body">
-                            This typically happens when your device's operating system kills the PenStar background
-                            process due to memory management or battery optimization, even if your device has plenty of
-                            free memory. To prevent this, grant PenStar the "Ignore Battery Optimisations"
-                            permission and set up Shizuku (see the <strong>How can I set up Shizuku?</strong> section).
-                            Additionally, it is also recommended to enable PenStar in Tasker's "Keep Accessibility
+                            This usually happens when One UI kills PenStar due to memory management or battery
+                            optimization, even when the device has plenty of free memory. To help prevent this:
+                            <ul>
+                                <li>Grant PenStar the "Ignore Battery Optimisations" permission</li>
+                                <li>Exclude PenStar in Memory Guardian</li>
+                            </ul>
+
+                            If the issue still occurs, it is recommended to set up Shizuku (see the <strong>How can I
+                            set up Shizuku?</strong> section), and enable PenStar in Tasker's "Keep Accessibility
                             Running" setting.
                         </div>
                     </div>
