@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support page for PenStar.">
+    <title>PenStar Support</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-5.3.8.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        #supportAccordion .accordion-header {
+            margin: 0;
+        }
+
+        #supportAccordion .accordion-button:not(.collapsed) {
+            color: inherit;
+            background-color: #fff;
+            box-shadow: none;
+        }
+
+        #supportAccordion .accordion-button:focus {
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1>PenStar Support</h1>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            <div class="accordion shadow-sm" id="supportAccordion">
+
+                <!-- Q1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button aria-controls="collapseOne" aria-expanded="false"
+                                class="accordion-button collapsed" data-bs-target="#collapseOne"
+                                data-bs-toggle="collapse" type="button">
+                            What devices does PenStar support?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingOne" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseOne">
+                        <div class="accordion-body">
+                            PenStar supports Samsung devices that can use the Bluetooth S Pen running Android 8.1 and
+                            later. This will mainly be flagship devices and tablets from 2018 and later.<br/><br/>
+                            Note that some features might not be supported on certain Android versions. For example, the
+                            Screenshot action cannot be used on Android 8.1.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+                            Why does PenStar require so many permissions?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingTwo" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseTwo">
+                        <div class="accordion-body">
+                            PenStar only strictly requires the "Notifications", "Read Logs", and "Accessibility"
+                            permissions to function. All other permissions are optional and are only requested when you
+                            attempt to use specific features. The app provides clear explanations for why each optional
+                            permission is needed when you enable those features.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+                            Can PenStar start automatically on boot?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingThree" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseThree">
+                        <div class="accordion-body">
+                            Yes, PenStar can start on boot. Ensure that the "Start on boot" option is enabled in the app
+                            settings.<br/><br/>
+                            On devices running Android 12 or earlier, no further action is needed. For Android 13 and
+                            later, to allow PenStar to start on boot without requiring you to manually grant one-time
+                            log access, you must set up Shizuku (see the <strong>How can I set up Shizuku?</strong>
+                            section). With Shizuku set up, it will automatically start on boot once your device is
+                            connected to a Wi-Fi network.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">
+                            What is the simulate double click option?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingFour" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseFour">
+                        <div class="accordion-body">
+                            In some situations, a double click can be recognized as two quick single clicks instead.
+                            Use this option when that happens.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button aria-controls="collapseFive" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseFive" data-bs-toggle="collapse" type="button">
+                            How can I use apps in my Secure Folder or Work Profile with PenStar?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingFive" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseFive">
+                        <div class="accordion-body">
+                            You can use apps located in a Secure Folder or Work Profile with PenStar. To do this,
+                            PenStar must only be installed on your primary user profile.<br/><br/>
+                            If the target app can also be installed on your primary profile, install it there, configure
+                            your PenStar actions, and then uninstall the app from the primary profile. Your
+                            configuration will remain and can still be modified in the future.<br/><br/>
+                            If the app cannot be installed on your primary profile, set up your desired PenStar
+                            configuration using a dummy app. Export your configuration using the "Backup" option in
+                            settings, open the backup file, and replace all instances of the dummy app's package name
+                            with the package name of the app in your Secure Folder or Work Profile. Finally, restore the
+                            modified configuration.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button aria-controls="collapseSix" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseSix" data-bs-toggle="collapse" type="button">
+                            Can I create my own actions?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingSix" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseSix">
+                        <div class="accordion-body">
+                            Yes, you can use the "Tasker Task" action to trigger any task you have
+                            created in Tasker, allowing for limitless possibilities.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button aria-controls="collapseSeven" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseSeven" data-bs-toggle="collapse" type="button">
+                            Can I switch PenStar configurations based on specific conditions?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingSeven" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseSeven">
+                        <div class="accordion-body">
+                            Yes, PenStar has Tasker Plugin support. This allows you to Enable, Disable, Backup, and
+                            Restore PenStar from Tasker. For example, you can create a Tasker profile that automatically
+                            restores a specific PenStar configuration whenever your device enters Power Saving mode.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button aria-controls="collapseEight" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#collapseEight" data-bs-toggle="collapse" type="button">
+                            PenStar randomly stops working and I have to restart it manually.
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingEight" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseEight">
+                        <div class="accordion-body">
+                            This usually happens when One UI kills PenStar due to memory management or battery
+                            optimization. If the issue still occurs after granting the "Ignore Battery Optimisations"
+                            permission, it is recommended to set up Shizuku (see the <strong>How can I set up
+                            Shizuku?</strong> section).<br/><br/>
+                            If you notice that the accessibility service is also being killed, enable PenStar
+                            in Tasker's "Keep Accessibility Running" setting.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q9 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                        <button aria-controls="collapseNine" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#collapseNine" data-bs-toggle="collapse" type="button">
+                            How can I set up Shizuku?
+                        </button>
+                    </h2>
+                    <div aria-labelledby="headingNine" class="accordion-collapse collapse"
+                         data-bs-parent="#supportAccordion" id="collapseNine">
+                        <div class="accordion-body">
+                            It is highly recommended to use the "Run logcat through Shizuku" option in PenStar settings.
+                            Properly configuring Shizuku ensures that PenStar survives being killed by the operating
+                            system, eliminating the need for manual restarts. Additionally, you will no longer need to
+                            grant one-time log access when enabling the service, which also allows PenStar to
+                            start on boot without manual intervention.<br/><br/>
+                            Follow these steps to set up PenStar with Shizuku:
+                            <ol class="mt-2 mb-0">
+                                <li>Download and install the latest Shizuku fork by thedjchi from <a
+                                        href="https://github.com/thedjchi/Shizuku/releases" target="_blank">here</a>.
+                                </li>
+                                <li>Once installed, pair Shizuku and start it using Wireless Debugging.</li>
+                                <li>In Shizuku settings, enable <strong>Start on boot</strong>,
+                                    <strong>Watchdog</strong>, and <strong>TCP mode</strong>.
+                                </li>
+                                <li>In PenStar, enable <strong>Run logcat through Shizuku</strong>.</li>
+                                <li>Turn PenStar off and then back on.</li>
+                            </ol>
+                            <br/>
+                            If done correctly, you will no longer see the one-time log access dialog when turning on
+                            PenStar. If you notice that Shizuku stops when unlocking or locking your device, or have
+                            other issues, refer to the <a
+                                href="https://github.com/thedjchi/Shizuku/wiki/troubleshooting" target="_blank">troubleshooting
+                            guide</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Developer Button -->
+            <div class="text-center mt-5">
+                <p class="mb-3">Still have questions or need further assistance?</p>
+                <a href="mailto:threestarsapps@gmail.com" class="btn btn-custom px-4 py-2">
+                    <i class="bi bi-envelope me-2"></i> Contact Developer
+                </a>
+                <div class="mt-4">
+                    <a href="../" class="text-decoration-none btn-link"><i class="bi bi-arrow-left me-1"></i> Back to
+                        Home</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="../assets/js/bootstrap-5.3.8.js"></script>
+</body>
+</html>
