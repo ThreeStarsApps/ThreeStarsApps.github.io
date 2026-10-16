@@ -1,0 +1,11 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    {{ ui.brand() }}
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>Menu <span aria-hidden="true">☰</span></button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      {% for link in site.navigation %}
+      <a href="{{ link.url }}"{% if page.active == link.key %} aria-current="page"{% endif %}>{{ link.label }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

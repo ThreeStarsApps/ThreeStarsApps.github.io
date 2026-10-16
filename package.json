@@ -1,0 +1,11 @@
+{
+  "name": "threestars-apps-site",
+  "private": true,
+  "description": "Optional browser checks for the static ThreeStars Apps website.",
+  "scripts": {
+    "check:browser": "node scripts/check_browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

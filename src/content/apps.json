@@ -1,0 +1,126 @@
+{
+  "keystar": {
+    "name": "KeyStar",
+    "version": "2.0",
+    "subtitle": "Button Mapper",
+    "title": "Buttons, reimagined.",
+    "description": "Map your Android device's buttons to the things you do every day. Control music, open apps, run Tasker tasks, and build shortcuts that change with the app you're using.",
+    "shortDescription": "Map volume, power, and navigation buttons to your own shortcuts. Add up to ten actions per button, with different actions for different apps.",
+    "os": "Android 8 or later",
+    "package": "com.threestars.keystar",
+    "apk": "KeyStar 2.0.apk",
+    "paid": "Power and navigation button mapping",
+    "compatibility": [
+      [
+        "Android",
+        "Android 8 or later. Available features can vary by Android version."
+      ],
+      [
+        "Hardware",
+        "If it runs Android, it will run KeyStar."
+      ],
+      [
+        "Permissions",
+        "Notifications and Read Logs are required. Other permissions are optional and requested when using specific features."
+      ],
+      [
+        "License",
+        "Volume button mapping is free. Power and navigation button mapping require a one-time purchase."
+      ]
+    ],
+    "features": [
+      [
+        "Ten ways to press",
+        "Single through quintuple presses, plus a long-press version of each."
+      ],
+      [
+        "Shortcuts for each app",
+        "Use contexts to give the same button different actions in individual apps and on the lock screen."
+      ],
+      [
+        "Dozens of built-in actions",
+        "Open apps, manage media playback, change system settings, launch digital assistants, perform system actions, and more."
+      ],
+      [
+        "Customised actions",
+        "Create your own touch sequences, run custom Tasker tasks, or invoke Android intents."
+      ],
+      [
+        "Keep familiar controls",
+        "Exclude apps such as Camera and Clock so their volume-button controls continue to work normally."
+      ],
+      [
+        "Fine-tune everything",
+        "Adjust standard and long press delays, haptic feedback, volume adjustment speed, and more."
+      ]
+    ],
+    "featureGraphicAlt": "KeyStar button list and Volume Up mapping with app and lock screen contexts",
+    "screenshots": [
+      "KeyStar button list with Volume Up, Volume Down, Side Key, Home, Back, and Recents",
+      "KeyStar Volume Up configuration and action picker with media, torch, system, and Tasker actions",
+      "KeyStar interface showing button mapping settings"
+    ]
+  },
+  "penstar": {
+    "name": "PenStar",
+    "version": "2.5",
+    "subtitle": "S Pen Button Mapper",
+    "title": "Air Actions, wherever.",
+    "description": "Map S Pen clicks and Air Actions to your favourite actions, even in apps that don't provide their own Air Action support. Control media, navigate, or run your own touch sequence.",
+    "shortDescription": "Give S Pen clicks and Air Actions a purpose in the apps you use. Create collections of gesture actions for one app or a group of apps.",
+    "os": "Android 8.1 or later",
+    "package": "com.threestars.penstar",
+    "apk": "PenStar 2.5.apk",
+    "paid": "More than two App Actions",
+    "compatibility": [
+      [
+        "Android",
+        "Android 8.1 or later. Available features can vary by Android version."
+      ],
+      [
+        "Hardware",
+        "A Samsung device with Bluetooth S Pen support is required."
+      ],
+      [
+        "Permissions",
+        "Notifications, Read Logs, and Accessibility are required. Other permissions are optional and requested when using specific features."
+      ],
+      [
+        "License",
+        "All features and up to two App Actions are free. More than two App Actions require a one-time purchase."
+      ]
+    ],
+    "features": [
+      [
+        "Make every gesture useful",
+        "Assign actions to clicks, double clicks, long clicks, directional gestures, pointy gestures, circles, and shake."
+      ],
+      [
+        "Air Actions for all apps",
+        "Use your S Pen to control apps even when their developers haven't implemented Air Actions."
+      ],
+      [
+        "Dozens of built-in actions",
+        "Open apps, manage media playback, change system settings, launch digital assistants, perform system actions, and more."
+      ],
+      [
+        "Customised actions",
+        "Create your own touch sequences, run custom Tasker tasks, or invoke Android intents."
+      ],
+      [
+        "Create multiple App Actions",
+        "Create App Actions, which are a set of actions for the buttons and gestures you choose for a collection of apps."
+      ],
+      [
+        "Backup and restore",
+        "Share individual App Actions with others or backup your entire configuration for safekeeping."
+      ]
+    ],
+    "featureGraphicAlt": "PenStar App Actions list and S Pen gesture settings for Shorts",
+    "screenshots": [
+      "PenStar App Actions list with Media, Reading, Shorts, and Web Browsing collections",
+      "PenStar New App Action editor showing app selection, S Pen gestures, and the action picker",
+      "PenStar Shorts App Action collection for Instagram and YouTube with click and directional touch sequences"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+<section id="choose-method">
+  <h2>Choose your setup method</h2>
+<p>Follow the instructions inside KeyStar or PenStar for the access your version needs. You have three supported setup routes:</p>
+<ul><li><strong>Shizuku:</strong> a useful option for ongoing log access and the startup behaviour described below.</li>
+<li><strong>ADB:</strong> follow the app's displayed setup instructions from an authorised computer.</li>
+<li><strong>Wireless Debugging:</strong> use the setup path supported by your device and the app.</li></ul>
+<p>The built-in pairing flow for wireless debugging is available on Android phones from Android 11. Earlier Android versions use a USB-based ADB setup before a wireless connection. See <a href='https://developer.android.com/tools/adb#connect-to-a-device-over-wi-fi'>Android's official ADB instructions</a> for connection details.</p>
+<p>The steps below use the <a href='https://github.com/thedjchi/Shizuku'>Shizuku fork by thedjchi</a> linked in the app support pages. Its Start on boot, Watchdog, and TCP mode options should not be assumed to exist in every Shizuku release.</p>
+</section>
+
+<section id="start-shizuku">
+  <h2>Install, pair, and start Shizuku</h2>
+<ol><li><strong>Install the recommended fork.</strong> Download it from the <a href='https://github.com/thedjchi/Shizuku/releases'>thedjchi/Shizuku releases page</a>.</li>
+<li><strong>Pair and start Shizuku.</strong> Follow its instructions for Wireless Debugging on devices that support pairing. Use the ADB route provided by Shizuku when appropriate for your Android version.</li>
+<li><strong>Check that Shizuku is running.</strong> Pairing alone is not the same as starting its service.</li>
+<li><strong>Configure ongoing startup.</strong> In this fork's settings, enable <strong>Start on boot</strong>, <strong>Watchdog</strong>, and <strong>TCP mode</strong>, as described in the KeyStar and PenStar support pages.</li></ol>
+<p>If your device has trouble pairing or keeping the connection, use the <a href='https://github.com/thedjchi/Shizuku/wiki/troubleshooting'>fork's troubleshooting guide</a>. Device settings and menu names can vary.</p>
+</section>
+
+<section id="connect-app">
+  <h2>Connect KeyStar or PenStar to Shizuku</h2>
+<ol><li><strong>Open your mapping app's settings.</strong> Enable <strong>Run logcat through Shizuku</strong>.</li>
+<li><strong>Allow the Shizuku access request.</strong> Follow any access prompt shown by Shizuku or the mapping app.</li>
+<li><strong>Turn the service on.</strong> This starts the service with the selected log-access method.</li>
+<li><strong>Check the result.</strong> With the setup working, the app should no longer show the one-time log-access dialog when you enable it. Try a simple button or S Pen action.</li></ol>
+<p>If you use both apps, enable Run logcat through Shizuku in each app separately. Continue to grant any other permission required by a particular action; log access does not replace every app permission.</p>
+</section>
+
+<section id="after-reboot">
+  <h2>Get ready after a reboot</h2>
+<p>Enable <strong>Start on boot</strong> in KeyStar or PenStar if you want the app to start automatically. On Android 13 and later, the recommended Shizuku setup avoids the manual one-time log-access step that otherwise interrupts automatic startup.</p>
+<p>For the fork's automatic-start setup, the device should connect to a Wi-Fi network shortly after restarting. Check that Shizuku is running and that the mapping app is enabled. If either service is stopped, review its startup settings and your device's background or battery restrictions.</p>
+<p>If you're on Android 13 or later and do not use Shizuku, you can still opt to start the app manually after reboot. A notification is shown to let you know it needs to be started manually on every boot.</p>
+</section>
+
+<section id="get-help">
+  <h2>If it still does not work</h2>
+<p>Check the <a href='/keystar/support/#collapseShizukuSetup'>KeyStar Shizuku answer</a> or <a href='/penstar/support/#collapseShizukuSetup'>PenStar Shizuku answer</a>. If Shizuku stops when locking or unlocking the device, start with the fork's troubleshooting guide.</p>
+<p>When contacting the developer, include your device model, Android version, mapping app version, Shizuku version, setup method, and the exact point where the process fails. These details help distinguish log-access problems from action-specific permissions.</p>
+</section>

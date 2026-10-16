@@ -1,0 +1,281 @@
+{
+  "pages": [
+    {
+      "url": "/",
+      "title": "Android Button Mapping Apps | ThreeStars Apps",
+      "description": "Map your hardware and S Pen buttons to the things you do most. Explore KeyStar, PenStar, setup guides, and support.",
+      "template": "home",
+      "schema": "website",
+      "modified": "2026-10-15"
+    },
+    {
+      "url": "/keystar/",
+      "title": "KeyStar: Button Mapper | ThreeStars Apps",
+      "description": "Map volume, power, and navigation buttons to your own shortcuts. Add up to ten actions per button, with different actions for different apps. No root needed. Free features and an optional lifetime licence.",
+      "app": "keystar",
+      "template": "product",
+      "active": "keystar",
+      "schema": "app",
+      "breadcrumbs": [
+        {
+          "title": "KeyStar",
+          "url": ""
+        }
+      ],
+      "modified": "2026-10-15"
+    },
+    {
+      "url": "/keystar/support/",
+      "title": "KeyStar Support | ThreeStars Apps",
+      "description": "Get help with KeyStar: compatible devices, permissions, Shizuku setup, starting on boot, Tasker integration, and common mapping problems.",
+      "app": "keystar",
+      "template": "support",
+      "active": "support",
+      "breadcrumbs": [
+        {
+          "title": "Support",
+          "url": "/support/"
+        },
+        {
+          "title": "KeyStar Support",
+          "url": ""
+        }
+      ],
+      "modified": "2026-10-15"
+    },
+    {
+      "url": "/keystar/privacy_policy/",
+      "title": "KeyStar Privacy Policy | ThreeStars Apps",
+      "description": "Read the KeyStar privacy policy, including personal data, third-party links, policy updates, and how to contact the developer.",
+      "app": "keystar",
+      "template": "privacy",
+      "breadcrumbs": [
+        {
+          "title": "KeyStar",
+          "url": "/keystar/"
+        },
+        {
+          "title": "Privacy Policy",
+          "url": ""
+        }
+      ],
+      "modified": "2026-10-15"
+    },
+    {
+      "url": "/penstar/",
+      "title": "PenStar: S Pen Button Mapper | ThreeStars Apps",
+      "description": "Give S Pen clicks and Air Actions a purpose in the apps you use. Create collections of gesture actions for one app or a group of apps. No root needed. Free features and an optional lifetime licence.",
+      "app": "penstar",
+      "template": "product",
+      "active": "penstar",
+      "schema": "app",
+      "breadcrumbs": [
+        {
+          "title": "PenStar",
+          "url": ""
+        }
+      ],
+      "modified": "2026-10-15"
+    },
+    {
+      "url": "/penstar/support/",
+      "title": "PenStar Support | ThreeStars Apps",
+      "description": "Get help with PenStar: compatible devices, permissions, Shizuku setup, starting on boot, Tasker integration, and common mapping problems.",
+      "app": "penstar",
+      "template": "support",
+      "active": "support",
+      "breadcrumbs": [
+        {
+          "title": "Support",
+          "url": "/support/"
+        },
+        {
+          "title": "PenStar Support",
+          "url": ""
+        }
+      ],
+      "modified": "2026-10-15"
+    },
+    {
+      "url": "/penstar/privacy_policy/",
+      "title": "PenStar Privacy Policy | ThreeStars Apps",
+      "description": "Read the PenStar privacy policy, including personal data, third-party links, policy updates, and how to contact the developer.",
+      "app": "penstar",
+      "template": "privacy",
+      "breadcrumbs": [
+        {
+          "title": "PenStar",
+          "url": "/penstar/"
+        },
+        {
+          "title": "Privacy Policy",
+          "url": ""
+        }
+      ],
+      "modified": "2026-10-15"
+    },
+    {
+      "url": "/support/",
+      "title": "Support | ThreeStars Apps",
+      "description": "Find setup guides, compatibility details, permissions, and troubleshooting for KeyStar Android button mapping and PenStar S Pen gestures.",
+      "template": "support-home",
+      "active": "support",
+      "breadcrumbs": [
+        {
+          "title": "Support",
+          "url": ""
+        }
+      ],
+      "modified": "2026-10-15"
+    },
+    {
+      "url": "/about/",
+      "title": "About | ThreeStars Apps",
+      "description": "Meet Enrique Anthony Galea, the developer behind KeyStar and PenStar, and discover the passion for automation and hotkeys behind ThreeStars Apps.",
+      "template": "about",
+      "breadcrumbs": [
+        {
+          "title": "About",
+          "url": ""
+        }
+      ],
+      "modified": "2026-10-15"
+    },
+    {
+      "url": "/contact/",
+      "title": "Contact | ThreeStars Apps",
+      "description": "Contact Enrique Anthony Galea, developer of KeyStar and PenStar, for setup help, troubleshooting, feedback, and feature ideas.",
+      "template": "contact",
+      "active": "contact",
+      "breadcrumbs": [
+        {
+          "title": "Contact",
+          "url": ""
+        }
+      ],
+      "modified": "2026-10-15"
+    },
+    {
+      "url": "/guides/",
+      "title": "Android Button Mapping Guides | ThreeStars Apps",
+      "description": "Learn to map Android volume and power buttons, customise S Pen gestures, set up Shizuku, and run Tasker tasks with KeyStar and PenStar.",
+      "template": "guides",
+      "active": "guides",
+      "breadcrumbs": [
+        {
+          "title": "Guides",
+          "url": ""
+        }
+      ],
+      "modified": "2026-10-15"
+    },
+    {
+      "url": "/guides/map-android-volume-buttons/",
+      "title": "How to map volume buttons on Android | ThreeStars Apps",
+      "description": "Use KeyStar to turn a volume-button press into a music control, torch shortcut, or another action, without root.",
+      "template": "guide",
+      "active": "guides",
+      "guide": "map-android-volume-buttons",
+      "schema": "article",
+      "article": true,
+      "breadcrumbs": [
+        {
+          "title": "Guides",
+          "url": "/guides/"
+        },
+        {
+          "title": "Map volume buttons",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "url": "/guides/map-samsung-side-button/",
+      "title": "How to map the power button on Android | ThreeStars Apps",
+      "description": "Assign media controls, the torch, an app, or a Tasker task to your Android power button with KeyStar.",
+      "template": "guide",
+      "active": "guides",
+      "guide": "map-samsung-side-button",
+      "schema": "article",
+      "article": true,
+      "breadcrumbs": [
+        {
+          "title": "Guides",
+          "url": "/guides/"
+        },
+        {
+          "title": "Map the power button",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "url": "/guides/map-s-pen-button-air-actions/",
+      "title": "How to map S Pen buttons and Air Actions | ThreeStars Apps",
+      "description": "Use PenStar to assign your own actions to S Pen clicks and gestures, including in apps without built-in Air Action support.",
+      "template": "guide",
+      "active": "guides",
+      "guide": "map-s-pen-button-air-actions",
+      "schema": "article",
+      "article": true,
+      "breadcrumbs": [
+        {
+          "title": "Guides",
+          "url": "/guides/"
+        },
+        {
+          "title": "Map S Pen gestures",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "url": "/guides/shizuku-setup/",
+      "title": "Set up KeyStar and PenStar with Shizuku | ThreeStars Apps",
+      "description": "Set up log access with Shizuku, understand the ADB and wireless debugging alternatives, and get your mappings ready after a reboot.",
+      "template": "guide",
+      "active": "guides",
+      "guide": "shizuku-setup",
+      "schema": "article",
+      "article": true,
+      "breadcrumbs": [
+        {
+          "title": "Guides",
+          "url": "/guides/"
+        },
+        {
+          "title": "Shizuku setup",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "url": "/guides/button-mapping-tasker/",
+      "title": "Run Tasker tasks with a button or S Pen gesture | ThreeStars Apps",
+      "description": "Connect KeyStar or PenStar to Tasker, assign an existing task to a button or gesture, and switch app configurations using the Tasker plugin.",
+      "template": "guide",
+      "active": "guides",
+      "guide": "button-mapping-tasker",
+      "schema": "article",
+      "article": true,
+      "breadcrumbs": [
+        {
+          "title": "Guides",
+          "url": "/guides/"
+        },
+        {
+          "title": "Mapping with Tasker",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "url": "/404.html",
+      "title": "Page Not Found | ThreeStars Apps",
+      "description": "Find KeyStar, PenStar, mapping guides, and support at ThreeStars Apps.",
+      "template": "404",
+      "noindex": true
+    }
+  ],
+  "redirects": []
+}

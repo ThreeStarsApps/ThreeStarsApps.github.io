@@ -1,0 +1,128 @@
+[
+  {
+    "heading": "headingSupportedDevices",
+    "question": "What devices does KeyStar support?",
+    "anchor": "collapseSupportedDevices",
+    "body": "KeyStar supports all Android devices running Android 8 and later. However, some buttons\n                            might not be supported on certain Android versions. For example, the power button cannot be\n                            mapped on Android 8 and 9."
+  },
+  {
+    "heading": "headingRequiredPermissions",
+    "question": "Why does KeyStar require so many permissions?",
+    "anchor": "collapseRequiredPermissions",
+    "body": "KeyStar only strictly requires the \"Notifications\" and \"Read Logs\" permissions to function.\n                            All other permissions are optional and are only requested when you attempt to use specific\n                            features. The app provides clear explanations for why each optional permission is needed\n                            when you enable those features."
+  },
+  {
+    "heading": "headingDataCollection",
+    "question": "Does KeyStar collect any data?",
+    "anchor": "collapseDataCollection",
+    "body": "KeyStar itself does not collect any data. However, KeyStar uses the Google Play Billing\n                            Library for purchases, and that library sends some data to Google. This is handled by\n                            Google and is outside the developer's control."
+  },
+  {
+    "heading": "headingAutomaticStartup",
+    "question": "Can KeyStar start automatically on boot?",
+    "anchor": "collapseAutomaticStartup",
+    "body": "Yes, KeyStar can start on boot. Ensure that the \"Start on boot\" option is enabled in the app\n                            settings.<br/><br/>\n                            On devices running Android 12 or earlier, no further action is needed. For Android 13 and\n                            later, to allow KeyStar to start on boot without requiring you to manually grant one-time\n                            log access, you must set up Shizuku (see the <a href=\"#collapseShizukuSetup\">How can I set up Shizuku?</a>\n                            section). With Shizuku set up, it will automatically start on boot once your device is\n                            connected to a Wi-Fi network."
+  },
+  {
+    "heading": "headingBixbyDisabledMessage",
+    "question": "How can I disable the \"Bixby is disabled\" message when pressing the power button?",
+    "anchor": "collapseBixbyDisabledMessage",
+    "body": "You can disable this message by using RegiStar to map the side key press and hold action\n                            to open an app that is no longer installed on the device. Simply install any app, set it\n                            to open that app, then uninstall it."
+  },
+  {
+    "heading": "headingConflictingActions",
+    "question": "Why do other actions run at the same time as my KeyStar actions?",
+    "anchor": "collapseConflictingActions",
+    "body": "Disable any action configured outside KeyStar for the same button gesture. For example, if\n                            you assign a KeyStar action to a double press of the power button, disable your device's\n                            default\n                            double-press action that opens the Camera."
+  },
+  {
+    "heading": "headingStandardPressDelay",
+    "question": "What is the standard press delay?",
+    "anchor": "collapseStandardPressDelay",
+    "body": "The standard press delay is the amount of time you have to press a button again to advance\n                            to the next slot (e.g., from a single to a double press). For example, if you have an action\n                            assigned to a single and double press, and the standard press delay is 250ms, you will have\n                            250ms after the first press to press the button again to trigger the double press action. If\n                            the time expires, the single press action will trigger instead. Note that the last assigned\n                            action in a sequence (in this case, the double press) is executed instantly without waiting\n                            for the delay to expire."
+  },
+  {
+    "heading": "headingLongPressDelay",
+    "question": "What is the long press delay?",
+    "anchor": "collapseLongPressDelay",
+    "body": "The long press delay is the amount of time you must hold a button for it to register as a\n                            long press. For example, suppose you have an action assigned to a triple long press, with a\n                            standard press delay of 250ms and a long press delay of 300ms. To trigger this action, you\n                            must press the button for less than 300ms, then within 250ms press it again for less than\n                            300ms, and finally, within another 250ms, hold the button for at least 300ms."
+  },
+  {
+    "heading": "headingVolumeButtonsInOtherApps",
+    "question": "I can't use the volume buttons to take photos or dismiss alarms anymore.",
+    "anchor": "collapseVolumeButtonsInOtherApps",
+    "body": "If an app uses the volume buttons for its own functions, you can add that app to the\n                            \"Excluded apps\" list in KeyStar settings. When an excluded app is in the foreground, KeyStar\n                            will allow the disabled buttons to pass through normally and not perform any actions. By\n                            default, the built-in Camera and Clock apps are excluded."
+  },
+  {
+    "heading": "headingExcludedAppTroubleshooting",
+    "question": "Why is an excluded app not working?",
+    "anchor": "collapseExcludedAppTroubleshooting",
+    "body": "When the notification shade or Quick Settings is open, KeyStar cannot detect the foreground\n                            app. This prevents KeyStar from knowing if an excluded app is currently active. If the\n                            feature still does not work when the notification shade is closed, contact the developer for\n                            assistance."
+  },
+  {
+    "heading": "headingLockScreenContext",
+    "question": "I can't use the lock screen context with the power button because I accidentally unlock the device.",
+    "anchor": "collapseLockScreenContext",
+    "body": "If your device has a fingerprint scanner on the power button, you may accidentally unlock\n                            your device while trying to trigger a lock screen action. To solve this, you can enable the\n                            \"Persist lockscreen context\" option in KeyStar settings. This provides a configurable window of\n                            time\n                            after unlocking your device during which the lock screen context remains active."
+  },
+  {
+    "heading": "headingScreenOffVolumeChanges",
+    "question": "When the screen is completely off, using the volume buttons still changes the volume.",
+    "anchor": "collapseScreenOffVolumeChanges",
+    "body": "It is currently not possible to prevent the volume buttons from changing the device volume\n                            when the screen is completely off (Always On Display not showing). As a workaround, you\n                            can enable the \"Restore volume\" setting. This will automatically restore your volume to its\n                            previous level after an action is triggered in this scenario."
+  },
+  {
+    "heading": "headingVolumeAdjustmentStops",
+    "question": "Adjusting the volume stops before releasing the key.",
+    "anchor": "collapseVolumeAdjustmentStops",
+    "body": "This happens when you set a custom volume change step in Sound Assistant. Enable the \"Custom\n                            volume change step\" setting to fix this issue."
+  },
+  {
+    "heading": "headingVolumeControlActions",
+    "question": "Volume control and sound mode actions do not work.",
+    "anchor": "collapseVolumeControlActions",
+    "body": "Starting from Android 17, volume control and sound mode actions might not work when KeyStar\n                            is started in the background. If this happens, tap the Enable Audio Controls notification\n                            when it appears, or use Shizuku (see the <a href=\"#collapseShizukuSetup\">How can I set up Shizuku?</a>\n                            section).<br/><br/>\n                            For advanced users, the ADB command \"adb shell cmd audio set-enable-hardening disable\" might\n                            be able to disable the restrictions."
+  },
+  {
+    "heading": "headingWorkProfiles",
+    "question": "How can I use apps in my Secure Folder or Work Profile with KeyStar?",
+    "anchor": "collapseWorkProfiles",
+    "body": "You can use apps located in a Secure Folder or Work Profile with KeyStar. To do this,\n                            KeyStar must only be installed on your primary user profile.<br/><br/>\n                            If the target app can also be installed on your primary profile, install it there, configure\n                            your KeyStar actions, and then uninstall the app from the primary profile. Your\n                            configuration will remain and can still be modified in the future.<br/><br/>\n                            If the app cannot be installed on your primary profile, set up your desired KeyStar\n                            configuration using a dummy app. Export your configuration using the \"Backup\" option in\n                            settings, open the backup file, and replace all instances of the dummy app's package name\n                            with the package name of the app in your Secure Folder or Work Profile. Finally, restore the\n                            modified configuration."
+  },
+  {
+    "heading": "headingLastAppTroubleshooting",
+    "question": "Why does the Last App action sometimes open an app that I swiped away?",
+    "anchor": "collapseLastAppTroubleshooting",
+    "body": "Without Shizuku, Last App relies on Android's app usage history, which can include apps that\n                            have been swiped away from Recents. When Shizuku is active in KeyStar, an improved Last App\n                            implementation is automatically used, avoiding this issue. See the\n                            <a href=\"#collapseShizukuSetup\">How can I set up Shizuku?</a> section below."
+  },
+  {
+    "heading": "headingCustomActions",
+    "question": "Can I create my own actions?",
+    "anchor": "collapseCustomActions",
+    "body": "Yes, you can use the \"Tasker Task\" action to trigger any task you have\n                            created in Tasker, allowing for limitless possibilities."
+  },
+  {
+    "heading": "headingConditionalConfigurations",
+    "question": "Can I switch KeyStar configurations based on specific conditions?",
+    "anchor": "collapseConditionalConfigurations",
+    "body": "Yes, KeyStar has Tasker Plugin support. This allows you to Enable, Disable, Backup, and\n                            Restore KeyStar from Tasker. For example, you can create a Tasker profile that automatically\n                            restores a specific KeyStar configuration whenever your device enters Power Saving mode."
+  },
+  {
+    "heading": "headingIntentControl",
+    "question": "How can I control KeyStar using intents?",
+    "anchor": "collapseIntentControl",
+    "body": "First, enable <strong>Control KeyStar using intents</strong> in KeyStar settings. You can\n                            then send either of these broadcast intent actions to start or stop KeyStar:\n                            <ul >\n                                <li><code>com.threestars.keystar.action.START_SERVICE</code></li>\n                                <li><code>com.threestars.keystar.action.STOP_SERVICE</code></li>\n                            </ul>\n                            For example, the ADB command <code>adb shell am broadcast -a\n                            com.threestars.keystar.action.START_SERVICE</code> starts KeyStar."
+  },
+  {
+    "heading": "headingRandomStops",
+    "question": "KeyStar randomly stops working and I have to restart it manually.",
+    "anchor": "collapseRandomStops",
+    "body": "This usually happens when Android kills KeyStar due to memory management or battery\n                            optimization. If the issue still occurs after granting the \"Ignore Battery Optimisations\"\n                            permission, it is recommended to set up Shizuku (see the <a href=\"#collapseShizukuSetup\">How can I set up Shizuku?</a> section).<br/><br/>\n                            If you notice that the accessibility service is also being killed, enable KeyStar\n                            in Tasker's \"Keep Accessibility Running\" setting."
+  },
+  {
+    "heading": "headingShizukuSetup",
+    "question": "How can I set up Shizuku?",
+    "anchor": "collapseShizukuSetup",
+    "body": "It is highly recommended to use the \"Run logcat through Shizuku\" option in KeyStar settings.\n                            Properly configuring Shizuku ensures that KeyStar survives being killed by the operating\n                            system, eliminating the need for manual restarts. Additionally, you will no longer need to\n                            grant one-time log access when enabling the service, which also allows KeyStar to\n                            start on boot without manual intervention.<br/><br/>\n                            Follow these steps to set up KeyStar with Shizuku:\n                            <ol >\n                                <li>Download and install the latest Shizuku fork by thedjchi from <a\n                                        href=\"https://github.com/thedjchi/Shizuku/releases\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.\n                                </li>\n                                <li>Once installed, pair Shizuku and start it using Wireless Debugging.</li>\n                                <li>In Shizuku settings, enable <strong>Start on boot</strong>,\n                                    <strong>Watchdog</strong>, and <strong>TCP mode</strong>.\n                                </li>\n                                <li>In KeyStar, enable <strong>Run logcat through Shizuku</strong>.</li>\n                                <li>Turn KeyStar off and then back on.</li>\n                            </ol>\n                            <br/>\n                            If done correctly, you will no longer see the one-time log access dialog when turning on\n                            KeyStar. If you notice that Shizuku stops when unlocking or locking your device, or have\n                            other issues, refer to the <a\n                                href=\"https://github.com/thedjchi/Shizuku/wiki/troubleshooting\" target=\"_blank\" rel=\"noopener noreferrer\">troubleshooting\n                            guide</a>."
+  }
+]

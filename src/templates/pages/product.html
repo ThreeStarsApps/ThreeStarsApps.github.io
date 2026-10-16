@@ -1,0 +1,62 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<section class="wrap page-hero product-hero">
+  {{ ui.app_lockup(page.app) }}
+  <h1>{{ app.title }}</h1>
+  <p class="lead">{{ app.description }}</p>
+</section>
+
+<div class="wrap product-toolbar">
+  <nav class="product-section-nav" aria-label="On this page">
+    <a href="#features">Features</a><a href="#compatibility">Compatibility</a><a href="#screenshots">Screenshots</a><a href="#support">Support</a>
+  </nav>
+  <div class="product-downloads">{{ ui.button('Google Play', app.playUrl) }}{{ ui.button('Direct Download', app.downloadUrl, 'secondary', download=true) }}</div>
+</div>
+
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section-head"><h2>Features</h2></div>
+    <div class="feature-grid">
+      {% for title, description in app.features %}
+      <div class="feature-item"><span class="feature-number">{{ '%02d' | format(loop.index) }}</span><h3>{{ title }}</h3><p>{{ description }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section wash" id="compatibility">
+  <div class="wrap split compatibility-grid">
+    <h2 class="section-heading">Compatibility</h2>
+    <table class="spec-table">
+      <caption class="sr-only">{{ app.name }} compatibility and license requirements</caption>
+      <tbody>
+        {% for label, description in app.compatibility %}
+        <tr{% if label == 'License' %} id="licence"{% endif %}><th scope="row">{{ label }}</th><td>{{ description }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section" id="screenshots">
+  <div class="wrap">
+    <div class="section-head"><h2>Screenshots</h2></div>
+    <div class="gallery">
+      {% for screenshot in app.screenshots %}
+      <figure>
+        <a href="/assets/images/{{ page.app }}_ss_{{ loop.index }}.png" data-enlarge-image="/assets/images/{{ page.app }}_ss_{{ loop.index }}.png" aria-label="Enlarge {{ app.name }} screenshot {{ loop.index }}">{{ ui.screenshot(page.app, loop.index, '(max-width: 600px) 85vw, 32vw') }}</a>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section-sm flush-top" id="support">
+  <div class="wrap">
+    <div class="product-support-strip">
+      <div><h2>Support</h2><p>Find setup instructions, frequently asked questions, and troubleshooting tips.</p></div>
+      {{ ui.button(app.name + ' Support', '/' + page.app + '/support/', 'secondary') }}
+    </div>
+  </div>
+</section>
+{% endblock %}

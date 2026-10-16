@@ -1,0 +1,8 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<section class="wrap page-hero">
+  <h1>Even simpler with the right guides.</h1>
+  <p class="lead">Practical guides to hardware and S Pen button mapping, Shizuku integration, and Tasker workflows.</p>
+</section>
+<section class="wrap section-sm flush-top">{{ ui.guide_cards(guides) }}</section>
+{% endblock %}

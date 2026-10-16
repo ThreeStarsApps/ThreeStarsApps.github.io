@@ -1,0 +1,38 @@
+<section id="prepare-a-task">
+  <h2>Start with a working Tasker task</h2>
+<p>Install Tasker separately and create the task you want to run. Test it directly in Tasker first. This gives you a working action before you connect it to a button or gesture.</p>
+<p>Then set up <a href='/keystar/'>KeyStar</a> or <a href='/penstar/'>PenStar</a>. Allow Run Tasker Tasks access when the mapping app requests it, and follow any Tasker prompt needed to permit the external task. Other permissions can depend on what the task itself does.</p>
+</section>
+
+<section id="assign-key">
+  <h2>Assign a task to a KeyStar button</h2>
+<ol><li><strong>Open the button configuration.</strong> For a starting example, use Volume Up or Volume Down.</li>
+<li><strong>Choose a context and trigger.</strong> Use General and a double press for a simple first mapping.</li>
+<li><strong>Select Tasker Task.</strong> Choose the task you have already created and tested.</li>
+<li><strong>Save and enable the mapping.</strong> Try the button press and check that the task runs as expected.</li></ol>
+<p>If the task runs inside Tasker but not from the button, review Tasker access and check that the KeyStar service, button mapping, and intended context are active.</p>
+</section>
+
+<section id="assign-gesture">
+  <h2>Assign a task to a PenStar gesture</h2>
+<ol><li><strong>Create an App Action.</strong> Choose the apps where you want the gesture to run the task.</li>
+<li><strong>Select a gesture.</strong> For example, choose Double Click.</li>
+<li><strong>Choose Tasker Task.</strong> Select your existing task and save the collection.</li>
+<li><strong>Try it inside a selected app.</strong> Confirm that PenStar and the collection are enabled, then perform the gesture.</li></ol>
+<p>PenStar needs a Samsung device with Air Actions and Android 8.1 or later. If the gesture itself is not detected, check the S Pen connection and PenStar's required permissions before changing the task.</p>
+</section>
+
+<section id="switch-configurations">
+  <h2>Switch configurations with the Tasker plugin</h2>
+<p>Both apps provide Tasker plugin support for <strong>Enable, Disable, Backup, and Restore</strong>. You can use these operations in a Tasker workflow to change which configuration is active.</p>
+<p>For example, you could keep a separate saved configuration for Power Saving mode and use a Tasker profile to restore it when that mode becomes active. Decide which configuration should be restored when leaving the mode as well.</p>
+<p>Configuration restore changes your app setup. Keep a backup of the configuration you want to return to, and try the workflow with a small set of mappings first.</p>
+</section>
+
+<section id="intents">
+  <h2>Start or stop the mapping service with an intent</h2>
+<p>For an alternative to the plugin, enable <strong>Control KeyStar using intents</strong> or <strong>Control PenStar using intents</strong> in the relevant app's settings. The app accepts broadcast intent actions to start or stop its service.</p>
+<ul><li>KeyStar: <code>com.threestars.keystar.action.START_SERVICE</code> and <code>com.threestars.keystar.action.STOP_SERVICE</code></li>
+<li>PenStar: <code>com.threestars.penstar.action.START_SERVICE</code> and <code>com.threestars.penstar.action.STOP_SERVICE</code></li></ul>
+<p>See <a href='/keystar/support/#collapseIntentControl'>KeyStar intent control</a> and <a href='/penstar/support/#collapseIntentControl'>PenStar intent control</a> for the developer's examples.</p>
+</section>

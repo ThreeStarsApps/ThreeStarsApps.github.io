@@ -1,0 +1,69 @@
+[
+  {
+    "slug": "map-android-volume-buttons",
+    "title": "How to map volume buttons on Android",
+    "summary": "Use KeyStar to turn a volume-button press into a music control, torch shortcut, or another action, without root.",
+    "answer": "You can map Android volume buttons with KeyStar on Android 8 or later. Complete the setup, choose Volume Up or Volume Down, select a trigger such as Double, and assign an action. Volume button mapping is free, and no root is needed.",
+    "apps": [
+      "keystar"
+    ],
+    "category": "Button mapping",
+    "readTime": 4,
+    "published": "2026-10-15",
+    "modified": "2026-10-15"
+  },
+  {
+    "slug": "map-samsung-side-button",
+    "title": "How to map the power button on Android",
+    "summary": "Assign media controls, the torch, an app, or a Tasker task to your Android power button with KeyStar.",
+    "answer": "KeyStar can map the power button on Android 10 and later. Choose the power button in KeyStar, assign an action to a trigger, and check for conflicting system shortcuts. No root is needed, but power button mapping requires a one-time purchase.",
+    "apps": [
+      "keystar"
+    ],
+    "category": "Button mapping",
+    "readTime": 4,
+    "published": "2026-10-15",
+    "modified": "2026-10-15"
+  },
+  {
+    "slug": "map-s-pen-button-air-actions",
+    "title": "How to map S Pen buttons and Air Actions",
+    "summary": "Use PenStar to assign your own actions to S Pen clicks and gestures, including in apps without built-in Air Action support.",
+    "answer": "PenStar maps S Pen clicks and Air Actions on Samsung devices that support Air Actions and run Android 8.1 or later. Create an App Action, choose the apps it applies to, and assign actions to gestures. All features and two App Actions are free. No root is needed.",
+    "apps": [
+      "penstar"
+    ],
+    "category": "S Pen mapping",
+    "readTime": 5,
+    "published": "2026-10-15",
+    "modified": "2026-10-15"
+  },
+  {
+    "slug": "shizuku-setup",
+    "title": "Set up KeyStar and PenStar with Shizuku",
+    "summary": "Set up log access with Shizuku, understand the ADB and wireless debugging alternatives, and get your mappings ready after a reboot.",
+    "answer": "KeyStar and PenStar work without root. Setup supports Shizuku, ADB, or wireless debugging. For ongoing use, the recommended Shizuku setup runs logcat through Shizuku and helps avoid repeated one-time log-access prompts. The startup options below refer to the Shizuku fork linked by the developer.",
+    "apps": [
+      "keystar",
+      "penstar"
+    ],
+    "category": "Setup",
+    "readTime": 5,
+    "published": "2026-10-15",
+    "modified": "2026-10-15"
+  },
+  {
+    "slug": "button-mapping-tasker",
+    "title": "Run Tasker tasks with a button or S Pen gesture",
+    "summary": "Connect KeyStar or PenStar to Tasker, assign an existing task to a button or gesture, and switch app configurations using the Tasker plugin.",
+    "answer": "Choose the Tasker Task action in KeyStar or PenStar to run a task you have created in Tasker. Assign it to a KeyStar button press or a PenStar gesture, allow the requested Tasker access, save, and try the mapping. Both apps also have a Tasker plugin for controlling their configurations.",
+    "apps": [
+      "keystar",
+      "penstar"
+    ],
+    "category": "Automation",
+    "readTime": 4,
+    "published": "2026-10-15",
+    "modified": "2026-10-15"
+  }
+]

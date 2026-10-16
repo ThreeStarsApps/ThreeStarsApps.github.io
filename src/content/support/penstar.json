@@ -1,0 +1,80 @@
+[
+  {
+    "heading": "headingSupportedDevices",
+    "question": "What devices does PenStar support?",
+    "anchor": "collapseSupportedDevices",
+    "body": "PenStar supports Samsung devices that can use the Bluetooth S Pen running Android 8.1 and\n                            later. This will mainly be flagship devices and tablets from 2018 and later.<br/><br/>\n                            Note that some features might not be supported on certain Android versions. For example, the\n                            Screenshot action cannot be used on Android 8.1."
+  },
+  {
+    "heading": "headingRequiredPermissions",
+    "question": "Why does PenStar require so many permissions?",
+    "anchor": "collapseRequiredPermissions",
+    "body": "PenStar only strictly requires the \"Notifications\", \"Read Logs\", and \"Accessibility\"\n                            permissions to function. All other permissions are optional and are only requested when you\n                            attempt to use specific features. The app provides clear explanations for why each optional\n                            permission is needed when you enable those features."
+  },
+  {
+    "heading": "headingDataCollection",
+    "question": "Does PenStar collect any data?",
+    "anchor": "collapseDataCollection",
+    "body": "PenStar itself does not collect any data. However, PenStar uses the Google Play Billing\n                            Library for purchases, and that library sends some data to Google. This is handled by\n                            Google and is outside the developer's control."
+  },
+  {
+    "heading": "headingAutomaticStartup",
+    "question": "Can PenStar start automatically on boot?",
+    "anchor": "collapseAutomaticStartup",
+    "body": "Yes, PenStar can start on boot. Ensure that the \"Start on boot\" option is enabled in the app\n                            settings.<br/><br/>\n                            On devices running Android 12 or earlier, no further action is needed. For Android 13 and\n                            later, to allow PenStar to start on boot without requiring you to manually grant one-time\n                            log access, you must set up Shizuku (see the <a href=\"#collapseShizukuSetup\">How can I set up Shizuku?</a>\n                            section). With Shizuku set up, it will automatically start on boot once your device is\n                            connected to a Wi-Fi network."
+  },
+  {
+    "heading": "headingSimulateDoubleClick",
+    "question": "What is the simulate double click option?",
+    "anchor": "collapseSimulateDoubleClick",
+    "body": "In some situations, a double click can be recognized as two quick single clicks instead.\n                            Use this option when that happens."
+  },
+  {
+    "heading": "headingVolumeControlActions",
+    "question": "Volume control and sound mode actions do not work.",
+    "anchor": "collapseVolumeControlActions",
+    "body": "Starting from Android 17, volume control and sound mode actions might not work when PenStar\n                            is started in the background. If this happens, tap the Enable Audio Controls notification\n                            when it appears, or use Shizuku (see the <a href=\"#collapseShizukuSetup\">How can I set up Shizuku?</a>\n                            section).<br/><br/>\n                            For advanced users, the ADB command \"adb shell cmd audio set-enable-hardening disable\" might\n                            be able to disable the restrictions."
+  },
+  {
+    "heading": "headingWorkProfiles",
+    "question": "How can I use apps in my Secure Folder or Work Profile with PenStar?",
+    "anchor": "collapseWorkProfiles",
+    "body": "You can use apps located in a Secure Folder or Work Profile with PenStar. To do this,\n                            PenStar must only be installed on your primary user profile.<br/><br/>\n                            If the target app can also be installed on your primary profile, install it there, configure\n                            your PenStar actions, and then uninstall the app from the primary profile. Your\n                            configuration will remain and can still be modified in the future.<br/><br/>\n                            If the app cannot be installed on your primary profile, set up your desired PenStar\n                            configuration using a dummy app. Export your configuration using the \"Backup\" option in\n                            settings, open the backup file, and replace all instances of the dummy app's package name\n                            with the package name of the app in your Secure Folder or Work Profile. Finally, restore the\n                            modified configuration."
+  },
+  {
+    "heading": "headingLastAppTroubleshooting",
+    "question": "Why does the Last App action sometimes open an app that I swiped away?",
+    "anchor": "collapseLastAppTroubleshooting",
+    "body": "Without Shizuku, Last App relies on Android's app usage history, which can include apps that\n                            have been swiped away from Recents. When Shizuku is active in PenStar, an improved Last App\n                            implementation is automatically used, avoiding this issue. See the\n                            <a href=\"#collapseShizukuSetup\">How can I set up Shizuku?</a> section below."
+  },
+  {
+    "heading": "headingCustomActions",
+    "question": "Can I create my own actions?",
+    "anchor": "collapseCustomActions",
+    "body": "Yes, you can use the \"Tasker Task\" action to trigger any task you have\n                            created in Tasker, allowing for limitless possibilities."
+  },
+  {
+    "heading": "headingConditionalConfigurations",
+    "question": "Can I switch PenStar configurations based on specific conditions?",
+    "anchor": "collapseConditionalConfigurations",
+    "body": "Yes, PenStar has Tasker Plugin support. This allows you to Enable, Disable, Backup, and\n                            Restore PenStar from Tasker. For example, you can create a Tasker profile that automatically\n                            restores a specific PenStar configuration whenever your device enters Power Saving mode."
+  },
+  {
+    "heading": "headingIntentControl",
+    "question": "How can I control PenStar using intents?",
+    "anchor": "collapseIntentControl",
+    "body": "First, enable <strong>Control PenStar using intents</strong> in PenStar settings. You can\n                            then send either of these broadcast intent actions to start or stop PenStar:\n                            <ul >\n                                <li><code>com.threestars.penstar.action.START_SERVICE</code></li>\n                                <li><code>com.threestars.penstar.action.STOP_SERVICE</code></li>\n                            </ul>\n                            For example, the ADB command <code>adb shell am broadcast -a\n                            com.threestars.penstar.action.START_SERVICE</code> starts PenStar."
+  },
+  {
+    "heading": "headingRandomStops",
+    "question": "PenStar randomly stops working and I have to restart it manually.",
+    "anchor": "collapseRandomStops",
+    "body": "This usually happens when Android kills PenStar due to memory management or battery\n                            optimization. If the issue still occurs after granting the \"Ignore Battery Optimisations\"\n                            permission, it is recommended to set up Shizuku (see the <a href=\"#collapseShizukuSetup\">How can I set up Shizuku?</a> section).<br/><br/>\n                            If you notice that the accessibility service is also being killed, enable PenStar\n                            in Tasker's \"Keep Accessibility Running\" setting."
+  },
+  {
+    "heading": "headingShizukuSetup",
+    "question": "How can I set up Shizuku?",
+    "anchor": "collapseShizukuSetup",
+    "body": "It is highly recommended to use the \"Run logcat through Shizuku\" option in PenStar settings.\n                            Properly configuring Shizuku ensures that PenStar survives being killed by the operating\n                            system, eliminating the need for manual restarts. Additionally, you will no longer need to\n                            grant one-time log access when enabling the service, which also allows PenStar to\n                            start on boot without manual intervention.<br/><br/>\n                            Follow these steps to set up PenStar with Shizuku:\n                            <ol >\n                                <li>Download and install the latest Shizuku fork by thedjchi from <a\n                                        href=\"https://github.com/thedjchi/Shizuku/releases\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.\n                                </li>\n                                <li>Once installed, pair Shizuku and start it using Wireless Debugging.</li>\n                                <li>In Shizuku settings, enable <strong>Start on boot</strong>,\n                                    <strong>Watchdog</strong>, and <strong>TCP mode</strong>.\n                                </li>\n                                <li>In PenStar, enable <strong>Run logcat through Shizuku</strong>.</li>\n                                <li>Turn PenStar off and then back on.</li>\n                            </ol>\n                            <br/>\n                            If done correctly, you will no longer see the one-time log access dialog when turning on\n                            PenStar. If you notice that Shizuku stops when unlocking or locking your device, or have\n                            other issues, refer to the <a\n                                href=\"https://github.com/thedjchi/Shizuku/wiki/troubleshooting\" target=\"_blank\" rel=\"noopener noreferrer\">troubleshooting\n                            guide</a>."
+  }
+]

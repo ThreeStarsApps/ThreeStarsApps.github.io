@@ -1,0 +1,31 @@
+<section id="before-you-start">
+  <h2>Before you start</h2>
+<p>You'll need any Android device running Android 8 or later and <a href='/keystar/'>KeyStar</a>. The actions available can depend on your device and Android version.</p>
+<p>Download KeyStar from <a href='https://play.google.com/store/apps/details?id=com.threestars.keystar'>Google Play</a> or the APK link on the app page.</p>
+<p>Follow KeyStar's setup prompts to grant the required access. You can use Shizuku, ADB, or wireless debugging. The <a href='/guides/shizuku-setup/'>Shizuku setup guide</a> explains the recommended way to setup the app.</p>
+</section>
+
+<section id="make-a-mapping">
+  <h2>Map Volume Up to play or pause music</h2>
+<ol><li><strong>Open KeyStar and complete setup.</strong> Enable the service and follow any permission prompts it shows.</li>
+<li><strong>Choose Volume Up.</strong> Open its button configuration and use the General context for a mapping that is not tied to one particular app.</li>
+<li><strong>Choose Single.</strong> This is the action for one short press. Select <strong>Media Control</strong>, then the Play / Pause action.</li>
+<li><strong>Save the configuration.</strong> Use the checkmark and make sure the button mapping and the main KeyStar service are enabled.</li>
+<li><strong>Try it with music playing.</strong> Return to your media app, play a track, and press Volume Up once. Check that playback pauses and resumes as expected.</li></ol>
+<p>You can use Volume Down instead, or choose a double or long press if you want a different shortcut.</p>
+<figure class='inline-figure'><img src='/assets/images/keystar_ss_2-720.webp' srcset='/assets/images/keystar_ss_2-360.webp 360w, /assets/images/keystar_ss_2-720.webp 720w' sizes='(max-width:600px) 85vw, 340px' width='720' height='1280' loading='lazy' alt='KeyStar Volume Up editor showing a Single media-control action and other action choices'><figcaption>The Volume Up editor lets you choose actions for different triggers. Your app version may look slightly different.</figcaption></figure>
+</section>
+
+<section id="add-more-actions">
+  <h2>Add a second action or an app context</h2>
+<p>For an example second shortcut, assign <strong>Torch → Toggle</strong> to Double. KeyStar supports single through quintuple presses, with a long-press variant for each: up to ten action slots per button.</p>
+<p>When single and double presses are both assigned, KeyStar needs time to tell them apart. The standard press delay controls that window. The last assigned action in a sequence runs without waiting for another press. Adjust delays in settings if your shortcuts feel too quick or too slow.</p>
+<p>Contexts let you choose different actions based on the app in the foreground. For example, a button can control music generally but perform a different action inside a particular app.</p>
+</section>
+
+<section id="keep-camera-controls">
+  <h2>Keep camera and alarm controls working</h2>
+<p>Some apps use volume buttons for their own controls, such as taking a photo or dismissing an alarm. Add those apps to KeyStar's <strong>Excluded apps</strong> list to let their normal button behaviour pass through. The built-in Camera and Clock apps are excluded by default.</p>
+<p>When the screen is fully off and Always On Display is not showing, a mapped volume press can still change the device volume. The <strong>Restore volume</strong> setting restores the previous volume after the action in this situation.</p>
+<p>If actions stop after a reboot, check <a href='/keystar/support/#collapseAutomaticStartup'>Start on boot</a> and the Shizuku setup. Find more details in <a href='/keystar/support/'>KeyStar Support</a>.</p>
+</section>

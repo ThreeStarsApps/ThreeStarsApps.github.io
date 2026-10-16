@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<header class="wrap page-hero">
+  <p class="eyebrow">{% for slug in guide.apps %}{{ apps[slug].name }}{% if not loop.last %} + {% endif %}{% endfor %} · {{ guide.category }}</p>
+  <h1>{{ guide.title }}</h1>
+  <p class="lead">{{ guide.summary }}</p>
+  <div class="article-meta">
+    <span>By <a href="/about/">{{ site.developer }}</a></span>
+    <span>Updated <time datetime="{{ guide.modified }}">{{ guide.modified | display_date }}</time></span>
+    <span>{{ guide.readTime }} min read</span>
+  </div>
+</header>
+<div class="wrap article-layout">
+  <article class="article-body">
+    <p class="answer">{{ guide.answer }}</p>
+    {{ guide.body | safe }}
+    <section class="article-related">
+      <h2>Keep exploring</h2>
+      {% for slug in guide.apps %}<a href="/{{ slug }}/support/">{{ apps[slug].name }} support</a>{% endfor %}
+      <a href="/guides/">All mapping guides</a>
+    </section>
+  </article>
+  <aside class="article-aside" aria-label="In this guide">
+    <strong>In this guide</strong>
+    {% for section in guide.sections %}<a href="#{{ section.id }}">{{ section.title }}</a>{% endfor %}
+    <div class="aside-cta">
+      <strong>Find your app</strong>
+      {% for slug in guide.apps %}<a href="/{{ slug }}/">Explore {{ apps[slug].name }}</a>{% endfor %}
+    </div>
+  </aside>
+</div>
+{% endblock %}
