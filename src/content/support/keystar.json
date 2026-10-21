@@ -102,6 +102,12 @@
     "body": "Yes, you can use the \"Tasker Task\" action to trigger any task you have\n                            created in Tasker, allowing for limitless possibilities."
   },
   {
+    "heading": "headingLockScreenShutdown",
+    "question": "Can KeyStar shut down my device from the lock screen?",
+    "anchor": "collapseLockScreenShutdown",
+    "body": "Yes, follow the <a href=\"/guides/android-lock-screen-shutdown-shortcut/\">Android lock screen shutdown guide</a>."
+  },
+  {
     "heading": "headingConditionalConfigurations",
     "question": "Can I switch KeyStar configurations based on specific conditions?",
     "anchor": "collapseConditionalConfigurations",

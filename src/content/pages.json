@@ -270,6 +270,26 @@
       ]
     },
     {
+      "url": "/guides/android-lock-screen-shutdown-shortcut/",
+      "title": "Android Lock Screen Shutdown Shortcut | KeyStar Guide",
+      "description": "Shut down an Android phone quickly with KeyStar, Shizuku, and Tasker. Learn why Before First Unlock (BFU) protects data better than lockdown alone.",
+      "template": "guide",
+      "active": "guides",
+      "guide": "android-lock-screen-shutdown-shortcut",
+      "schema": "article",
+      "article": true,
+      "breadcrumbs": [
+        {
+          "title": "Guides",
+          "url": "/guides/"
+        },
+        {
+          "title": "Android shutdown shortcut",
+          "url": ""
+        }
+      ]
+    },
+    {
       "url": "/404.html",
       "title": "Page Not Found | ThreeStars Apps",
       "description": "Find KeyStar, PenStar, mapping guides, and support at ThreeStars Apps.",

@@ -7,7 +7,7 @@
     "apps": [
       "keystar"
     ],
-    "category": "Button mapping",
+    "category": "Button Mapping",
     "readTime": 4,
     "published": "2026-10-15",
     "modified": "2026-10-15"
@@ -20,7 +20,7 @@
     "apps": [
       "keystar"
     ],
-    "category": "Button mapping",
+    "category": "Button Mapping",
     "readTime": 4,
     "published": "2026-10-15",
     "modified": "2026-10-15"
@@ -33,7 +33,7 @@
     "apps": [
       "penstar"
     ],
-    "category": "S Pen mapping",
+    "category": "S Pen Mapping",
     "readTime": 5,
     "published": "2026-10-15",
     "modified": "2026-10-15"
@@ -65,5 +65,18 @@
     "readTime": 4,
     "published": "2026-10-15",
     "modified": "2026-10-15"
+  },
+  {
+    "slug": "android-lock-screen-shutdown-shortcut",
+    "title": "Shut down an Android device quickly and discreetly from the lock screen",
+    "summary": "Use KeyStar, Shizuku, and Tasker to create a quick shortcut that shuts down your Android device, disabling biometrics and protecting its next startup with Before First Unlock (BFU) mode.",
+    "answer": "KeyStar can run a Tasker shutdown task from the lock screen. Start Shizuku with TCP mode enabled, create a Tasker ADB Wifi action with the \"svc power shutdown\" command and 127.0.0.1 host, then assign that task to a button in KeyStar's lock screen context. After powering on again, your device will be in Before First Unlock (BFU) mode and require your PIN, pattern, or password to unlock.",
+    "apps": [
+      "keystar"
+    ],
+    "category": "Privacy",
+    "readTime": 8,
+    "published": "2026-10-21",
+    "modified": "2026-10-21"
   }
 ]

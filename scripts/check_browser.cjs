@@ -64,7 +64,8 @@ const base = options.url.replace(/\/$/, '');
     assert.equal(await demo.locator('[data-demo-label]').textContent(), 'Volume Up · Single Press');
 
     await goto('/guides/');
-    assert.equal(await page.locator('.guide-card:visible').count(), 5);
+    const guides = JSON.parse(await fs.readFile(path.join(__dirname, '../src/content/guides.json'), 'utf8'));
+    assert.equal(await page.locator('.guide-card:visible').count(), guides.length);
     await page.screenshot({ path: path.join(qa, 'guides-desktop.png'), fullPage: true });
 
     await goto('/keystar/support/#collapseShizukuSetup');
