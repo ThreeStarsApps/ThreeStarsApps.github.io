@@ -1,14 +1,14 @@
 {
   "keystar": {
     "name": "KeyStar",
-    "version": "2.0",
+    "version": "2.01",
     "subtitle": "Button Mapper",
     "title": "Buttons, reimagined.",
     "description": "Map your Android device's buttons to the things you do every day. Control music, open apps, run Tasker tasks, and build shortcuts that change with the app you're using.",
     "shortDescription": "Map volume, power, and navigation buttons to your own shortcuts. Add up to ten actions per button, with different actions for different apps.",
     "os": "Android 8 or later",
     "package": "com.threestars.keystar",
-    "apk": "KeyStar 2.0.apk",
+    "apk": "KeyStar 2.01.apk",
     "paid": "Power and navigation button mapping",
     "compatibility": [
       [
@@ -63,14 +63,14 @@
   },
   "penstar": {
     "name": "PenStar",
-    "version": "2.5",
+    "version": "2.51",
     "subtitle": "S Pen Button Mapper",
     "title": "Air Actions, wherever.",
     "description": "Map S Pen clicks and Air Actions to your favourite actions, even in apps that don't provide their own Air Action support. Control media, navigate, or run your own touch sequence.",
     "shortDescription": "Give S Pen clicks and Air Actions a purpose in the apps you use. Create collections of gesture actions for one app or a group of apps.",
     "os": "Android 8.1 or later",
     "package": "com.threestars.penstar",
-    "apk": "PenStar 2.5.apk",
+    "apk": "PenStar 2.51.apk",
     "paid": "More than two App Actions",
     "compatibility": [
       [
