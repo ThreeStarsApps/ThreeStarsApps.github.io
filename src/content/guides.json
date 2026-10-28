@@ -78,5 +78,18 @@
     "readTime": 8,
     "published": "2026-10-21",
     "modified": "2026-10-21"
+  },
+  {
+    "slug": "kde-connect-physical-remote",
+    "title": "Use your phone as a physical remote with KDE Connect",
+    "summary": "Turn your phone's volume buttons into device media controls with KeyStar contexts and KDE Connect commands.",
+    "answer": "KeyStar can turn your phone into a physical remote for a device paired through KDE Connect. Create a KDE Connect app context, then assign an Intent action to each button press. Each intent sends the device's device ID and a saved command ID to KDE Connect, which runs that command on your device.",
+    "apps": [
+      "keystar"
+    ],
+    "category": "Remote Control",
+    "readTime": 8,
+    "published": "2026-10-28",
+    "modified": "2026-10-28"
   }
 ]

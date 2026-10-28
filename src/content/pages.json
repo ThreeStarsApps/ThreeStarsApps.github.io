@@ -167,7 +167,7 @@
           "url": ""
         }
       ],
-      "modified": "2026-10-15"
+      "modified": "2026-10-28"
     },
     {
       "url": "/guides/map-android-volume-buttons/",
@@ -285,6 +285,26 @@
         },
         {
           "title": "Android shutdown shortcut",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "url": "/guides/kde-connect-physical-remote/",
+      "title": "Use Your Phone as a Physical Remote with KDE Connect | KeyStar Guide",
+      "description": "Use KeyStar contexts and Intent actions to control your computer with your phone's volume buttons. Find KDE Connect device and command IDs and map media shortcuts.",
+      "template": "guide",
+      "active": "guides",
+      "guide": "kde-connect-physical-remote",
+      "schema": "article",
+      "article": true,
+      "breadcrumbs": [
+        {
+          "title": "Guides",
+          "url": "/guides/"
+        },
+        {
+          "title": "KDE Connect physical remote",
           "url": ""
         }
       ]
