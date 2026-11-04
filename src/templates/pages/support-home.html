@@ -1,0 +1,21 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<section class="wrap page-hero">
+  <h1>Let's get your<br>shortcuts working.</h1>
+  <p class="lead">Choose an app for setup instructions and troubleshooting, or start with a guide.</p>
+</section>
+<section class="wrap section-sm flush-top">
+  <div class="about-grid">
+    <div>
+      {% for slug, app in apps.items() %}
+      <a class="support-card" href="/{{ slug }}/support/"><img src="/assets/images/{{ slug }}_icon.png" alt="" width="52" height="52"><strong>{{ app.name }} Support</strong>{{ ui.icon('arrow') }}</a>
+      {% endfor %}
+    </div>
+    <div>
+      <h2>Getting started?</h2>
+      <p>Find out how to set up Shizuku, map your first button, or give your S Pen a new action.</p>
+      <div class="hero-actions">{{ ui.button('Explore the guides', '/guides/', 'secondary') }}{{ ui.button('Contact the developer', '/contact/', 'secondary') }}</div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,37 @@
+<section id="check-air-actions">
+  <h2>Check that your S Pen supports Air Actions</h2>
+<p>PenStar needs a Samsung device and S Pen with <strong>Air Actions</strong>, on Android 8.1 or later. Check the S Pen settings on your device for Air Actions and make sure the S Pen is connected and ready.</p>
+<p>Writing with an S Pen does not by itself mean Air Actions are supported. A non-Bluetooth S Pen cannot provide Bluetooth Air Actions. Check your exact device and S Pen before installing.</p>
+<p>Download <a href='/penstar/'>PenStar</a>, then follow its setup prompts. Setup supports Shizuku, ADB, or wireless debugging. Read Logs and Accessibility access are required for PenStar's operation; other permissions depend on the actions you choose. The app explains each permission as you enable it.</p>
+</section>
+
+<section id="understand-collections">
+  <h2>What is an App Action?</h2>
+<p>An <strong>App Action</strong> is a collection of actions for S Pen gestures, applied to a set of apps. It can include one app or several. For example, a “Web Browsing” App Action could apply to both Chrome and Samsung Internet, with one action for a click and another for a directional gesture.</p>
+<p>The free version includes every feature and up to <strong>two App Action collections</strong>. This is a limit on the number of App Actions, not a limit of two individual apps. A one-time purchase lets you add more than two collections, without ads or a subscription.</p>
+</section>
+
+<section id="make-an-app-action">
+  <h2>Create your first S Pen mapping</h2>
+<ol><li><strong>Open PenStar and complete setup.</strong> Enable the service after granting the required permissions.</li>
+<li><strong>Add an App Action.</strong> Use the plus button and give the App Action a useful name, such as “Media”.</li>
+<li><strong>Choose the apps.</strong> Select the apps where this App Action should apply.</li>
+<li><strong>Choose a gesture and an action.</strong> For a simple starting point, set <strong>Click</strong> to <strong>Media Control → Play / Pause</strong>.</li>
+<li><strong>Save and enable the App Action.</strong> Open one of its selected apps, start playback, and click the S Pen button. Check that it pauses and resumes your media.</li></ol>
+<p>Add another gesture when the first works. You can use Double Click for a second media action, a directional gesture for a system action, or a Tasker task for a workflow of your own.</p>
+<figure class='inline-figure'><img src='/assets/images/penstar_ss_2-720.webp' srcset='/assets/images/penstar_ss_2-360.webp 360w, /assets/images/penstar_ss_2-720.webp 720w' sizes='(max-width:600px) 85vw, 340px' width='720' height='1280' loading='lazy' alt='PenStar App Action editor with a name, selected apps, gesture slots, and action picker'><figcaption>An App Action brings together the apps, gestures, and actions for a particular workflow. Appearance may vary by app version.</figcaption></figure>
+</section>
+
+<section id="choose-gestures">
+  <h2>Choose gestures and actions that fit</h2>
+<p>PenStar supports click, double click, long click, left, right, up, down, pointy directional gestures, clockwise and counterclockwise circles, and shake. The available Air Actions depend on your device and S Pen.</p>
+<p>Actions include opening an app, media controls, system settings, system actions, the torch, digital assistant, touch sequences, and Tasker tasks. A touch sequence lets you assign taps or swipes for a particular workflow. Keep the target app's layout in mind when you use screen-position-based actions.</p>
+<p>Some actions depend on Android version. For example, the Screenshot action is unavailable on Android 8.1. Start with a simple action so you can confirm that the gesture is detected before building a more involved sequence.</p>
+</section>
+
+<section id="troubleshoot">
+  <h2>If a gesture does not work</h2>
+<p>Check that the S Pen is connected, the PenStar service is enabled, the App Action is enabled, and the app you are using is included in that App Action. Review any permission or log-access prompt shown by PenStar.</p>
+<p>If a double click is detected as two single clicks, try <strong>Simulate double click</strong>. If the service stops after a reboot or in the background, read the <a href='/guides/shizuku-setup/'>Shizuku setup guide</a> and <a href='/penstar/support/#collapseAutomaticStartup'>start-on-boot answer</a>.</p>
+<p>The <a href='/penstar/support/'>PenStar Support page</a> covers permissions, Secure Folder and Work Profile apps, Tasker integration, and other troubleshooting.</p>
+</section>

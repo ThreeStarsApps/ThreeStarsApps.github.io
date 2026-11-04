@@ -1,0 +1,69 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Your buttons.<br>Your rules.</h1>
+      <p class="lead">Map your hardware and S Pen buttons to the things you do most.</p>
+      <div class="hero-actions">{{ ui.button('Explore apps', '#apps') }}{{ ui.button('Explore guides', '/guides/', 'secondary') }}</div>
+    </div>
+    <div class="shortcut-stage" data-shortcut-demo>
+      <div class="demo-tabs" role="group" aria-label="Preview an app">
+        <button type="button" data-demo-app="keystar" aria-pressed="true">KeyStar</button>
+        <button type="button" data-demo-app="penstar" aria-pressed="false">PenStar</button>
+      </div>
+      <div class="demo-core">
+        <div class="hardware-key" data-demo-hardware aria-hidden="true"><span>+</span><span>−</span></div>
+        <div class="demo-result" role="status" aria-live="polite" aria-atomic="true">
+          <small data-demo-label>Volume Up · Single Press</small>
+          <strong data-demo-action>Play / Pause</strong>
+          <p data-demo-description>Control your music with a single press.</p>
+        </div>
+      </div>
+      <div class="demo-triggers" role="group" aria-label="Preview a press pattern">
+        <button type="button" data-demo-trigger="0" aria-pressed="true">Single</button>
+        <button type="button" data-demo-trigger="1" aria-pressed="false">Double</button>
+        <button type="button" data-demo-trigger="2" aria-pressed="false">Long</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="apps">
+  <div class="wrap">
+    <div class="section-head"><h2>Complete customisation.</h2></div>
+    <div class="app-grid">{% for slug in apps %}{{ ui.app_card(slug) }}{% endfor %}</div>
+  </div>
+</section>
+
+<section class="section wash">
+  <div class="wrap">
+    <div class="section-head"><h2>Guides</h2><a class="text-link" href="/guides/">See all guides</a></div>
+    {{ ui.guide_cards(guides[:3]) }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="split-intro">
+      <h2 class="section-heading">Three steps to getting more from your buttons.</h2>
+      <p>Both apps work without root. Setup supports Shizuku, ADB, or wireless debugging, with help available along the way.</p>
+      <a class="text-link setup-guide-link" href="/guides/shizuku-setup/">Read the setup guide</a>
+    </div>
+    <ol class="step-list" role="list">
+      <li><span class="step-number" aria-hidden="true">1</span><div><h3>Download an app</h3><p>Choose KeyStar for hardware buttons or PenStar for S Pen buttons.</p></div></li>
+      <li><span class="step-number" aria-hidden="true">2</span><div><h3>Grant permissions</h3><p>Follow the app's setup instructions to grant the permissions needed for your mappings.</p></div></li>
+      <li><span class="step-number" aria-hidden="true">3</span><div><h3>Start mapping</h3><p>Choose a button or gesture, assign an action, and make it yours.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section-sm flush-top">
+  <div class="wrap">
+    <div class="cta-band">
+      <div><h2>A little help goes a long way.</h2><p>Find setup guides, frequently asked questions, and troubleshooting tips in the support page.</p></div>
+      {{ ui.button('Support', '/support/', 'light') }}
+    </div>
+  </div>
+</section>
+{% endblock %}

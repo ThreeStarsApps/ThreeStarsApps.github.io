@@ -1,0 +1,33 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<section class="wrap page-hero"><h1>{{ app.name }} Support</h1></section>
+<div class="wrap support-layout">
+  <aside class="support-aside" aria-label="Support shortcuts">
+    <strong>Jump to an answer</strong>
+    <a href="#collapseSupportedDevices">Compatible devices</a>
+    <a href="#collapseRequiredPermissions">Permissions</a>
+    <a href="#collapseAutomaticStartup">Start on boot</a>
+    <a href="#collapseShizukuSetup">Shizuku setup</a>
+    <a href="#contact">Contact the developer</a>
+    <div class="support-switch"><a href="/{{ page.app }}/">About {{ app.name }}</a><a href="/{{ other_app }}/support/">{{ apps[other_app].name }} Support</a></div>
+  </aside>
+  <div>
+    <div class="support-search">
+      <label for="support-search">Find an answer</label>
+      <div class="search-box">
+        <input type="search" id="support-search" placeholder="Search for help..." autocomplete="off" aria-controls="support-answers" data-support-search>
+        <span class="search-glyph">{{ ui.icon('search') }}</span>
+      </div>
+      <p class="search-status" role="status" aria-live="polite" data-search-status>{{ faqs | length }} answers</p>
+    </div>
+    <p class="info-box" data-search-empty hidden>No answers found. Try another word or <a href="#contact">contact the developer</a>.</p>
+    <div class="faq-list" id="support-answers">
+      {% for item in faqs %}{{ ui.faq(item) }}{% endfor %}
+    </div>
+    <div class="support-contact" id="contact">
+      <div><strong>Still need help?</strong><p>Include your device, Android version, {{ app.name }} version, and what happens.</p></div>
+      {{ ui.button('Contact the developer', '/contact/', small=true) }}
+    </div>
+  </div>
+</div>
+{% endblock %}

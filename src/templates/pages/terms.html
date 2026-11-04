@@ -1,0 +1,26 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<section class="wrap page-hero legal-hero"><h1>Terms of Service</h1></section>
+<div class="wrap"><div class="legal-layout">
+  <section>
+    <div class="policy-info">
+      Version 1.0<br>
+      Last Updated: <time datetime="{{ page.modified }}">{{ page.modified | display_date('%d/%m/%Y') }}</time>
+    </div>
+    <p>These terms apply to your use of {{ app.name }}.</p>
+  </section>
+  <section>
+    <h2 class="policy-heading">Using the App</h2>
+    <p>You may install and use the app for lawful purposes on compatible devices. The app requires {{ app.os }}{% if page.app == 'penstar' %} and a Samsung device with Bluetooth S Pen support{% endif %}. Features can vary by device, Android version, and permissions. See the <a href="/{{ page.app }}/#compatibility">compatibility details</a> before buying.</p>
+  </section>
+  <section>
+    <h2 class="policy-heading">Purchases and Consumer Rights</h2>
+    <p>{{ app.name }} is free to download. An optional one-time in-app purchase unlocks the <a href="/{{ page.app }}/#licence">paid features</a>. Google Play shows the price before you buy. For purchases made through Google Play, see <a href="https://support.google.com/googleplay/answer/2479637">Google Play’s refund guidance</a> or contact me for help.</p>
+    <p>You keep all your statutory consumer rights. If the app or a paid feature is faulty, unavailable, or fails to work as described, you may be entitled to a fix, a price reduction, or a refund under applicable law.</p>
+  </section>
+  <section>
+    <h2>Contact</h2>
+    <p>For questions, complaints, or purchase help, email <a href="mailto:{{ site.email }}">{{ site.email }}</a>. For setup help, visit <a href="/{{ page.app }}/support/">{{ app.name }} Support</a>. See also the <a href="/{{ page.app }}/privacy_policy/">{{ app.name }} Privacy Policy</a>.</p>
+  </section>
+</div></div>
+{% endblock %}

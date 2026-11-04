@@ -1,0 +1,36 @@
+{
+  "url": "https://threestarsapps.com",
+  "name": "ThreeStars Apps",
+  "email": "threestarsapps@gmail.com",
+  "developer": "Enrique Anthony Galea",
+  "copyrightYear": 2026,
+  "socialImage": "/assets/images/social-card.png",
+  "socialImageAlt": "ThreeStars Apps: KeyStar for Android buttons and PenStar for S Pen gestures",
+  "navigation": [
+    {
+      "key": "keystar",
+      "label": "KeyStar",
+      "url": "/keystar/"
+    },
+    {
+      "key": "penstar",
+      "label": "PenStar",
+      "url": "/penstar/"
+    },
+    {
+      "key": "guides",
+      "label": "Guides",
+      "url": "/guides/"
+    },
+    {
+      "key": "support",
+      "label": "Support",
+      "url": "/support/"
+    },
+    {
+      "key": "contact",
+      "label": "Contact",
+      "url": "/contact/"
+    }
+  ]
+}

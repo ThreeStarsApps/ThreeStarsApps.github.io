@@ -1,0 +1,7 @@
+.idea/
+__pycache__/
+*.pyc
+.qa/
+node_modules/
+.venv/
+DEVELOPMENT.md
