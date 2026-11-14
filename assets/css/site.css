@@ -1263,6 +1263,19 @@ button:disabled {
   border-radius: 4px;
 }
 
+.faq-answer pre {
+  background: var(--wash);
+  border-radius: 6px;
+  margin: 10px 0 0;
+  padding: 8px 12px;
+  white-space: pre-wrap;
+}
+
+.faq-answer pre code {
+  background: transparent;
+  padding: 0;
+}
+
 .faq-answer .answer-permalink {
   font-size: 11px;
   color: var(--muted);

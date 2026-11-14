@@ -81,7 +81,7 @@
     "heading": "headingVolumeControlActions",
     "question": "Volume control and sound mode actions do not work.",
     "anchor": "collapseVolumeControlActions",
-    "body": "Starting from Android 17, volume control and sound mode actions might not work when KeyStar\n                            is started in the background. If this happens, tap the Enable Audio Controls notification\n                            when it appears, or use Shizuku (see the <a href=\"#collapseShizukuSetup\">How can I set up Shizuku?</a>\n                            section).<br/><br/>\n                            For advanced users, the ADB command \"adb shell cmd audio set-enable-hardening disable\" might\n                            be able to disable the restrictions."
+    "body": "<p>Starting from Android 17, volume control and sound mode actions might not work when KeyStar is started in the background. If this happens, run the ADB command below.</p><pre><code>adb shell cmd audio set-enable-hardening disable</code></pre>"
   },
   {
     "heading": "headingWorkProfiles",

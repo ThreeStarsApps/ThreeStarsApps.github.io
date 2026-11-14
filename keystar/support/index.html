@@ -152,12 +152,7 @@
                             volume change step" setting to fix this issue.<a class="answer-permalink" href="#collapseVolumeAdjustmentStops" aria-label="Link to answer: Adjusting the volume stops before releasing the key.">Link to this answer</a></div>
 </details><details class="faq-item" id="collapseVolumeControlActions">
   <summary id="headingVolumeControlActions">Volume control and sound mode actions do not work.</summary>
-  <div class="faq-answer">Starting from Android 17, volume control and sound mode actions might not work when KeyStar
-                            is started in the background. If this happens, tap the Enable Audio Controls notification
-                            when it appears, or use Shizuku (see the <a href="#collapseShizukuSetup">How can I set up Shizuku?</a>
-                            section).<br/><br/>
-                            For advanced users, the ADB command "adb shell cmd audio set-enable-hardening disable" might
-                            be able to disable the restrictions.<a class="answer-permalink" href="#collapseVolumeControlActions" aria-label="Link to answer: Volume control and sound mode actions do not work.">Link to this answer</a></div>
+  <div class="faq-answer"><p>Starting from Android 17, volume control and sound mode actions might not work when KeyStar is started in the background. If this happens, run the ADB command below.</p><pre><code>adb shell cmd audio set-enable-hardening disable</code></pre><a class="answer-permalink" href="#collapseVolumeControlActions" aria-label="Link to answer: Volume control and sound mode actions do not work.">Link to this answer</a></div>
 </details><details class="faq-item" id="collapseWorkProfiles">
   <summary id="headingWorkProfiles">How can I use apps in my Secure Folder or Work Profile with KeyStar?</summary>
   <div class="faq-answer">You can use apps located in a Secure Folder or Work Profile with KeyStar. To do this,
