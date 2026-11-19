@@ -15,13 +15,13 @@
 
 <section id="grant-nearby-devices">
   <h2>2. Grant the Nearby devices permission</h2>
-  <p>Open <strong>Settings → Apps</strong> and select <strong>Air Command</strong>. If it’s hidden, turn on <strong>Show system apps</strong>. Open <strong>Permissions → Nearby devices</strong> and tap <strong>Allow</strong>.</p>
+  <p>Open <strong>Settings → Apps</strong> and select <strong>Air Command</strong>. If it's hidden, turn on <strong>Show system apps</strong>. Open <strong>Permissions → Nearby devices</strong> and tap <strong>Allow</strong>.</p>
 </section>
 
 <section id="edit-floating-feature">
   <h2>3. Spoof S Pen support</h2>
-  <p>Back up <code>/system/etc/floating_feature.xml</code> before editing it. Preserve the file’s original owner, group, and permissions when you make changes.</p>
-  <p>Find <code>SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC</code>. If the element already exists, set <code>unbundled_spec=remote</code> in its value and keep the other entries. If it’s missing, add this element inside the XML file’s root element.</p>
+  <p>Back up <code>/system/etc/floating_feature.xml</code> before editing it. Preserve the file's original owner, group, and permissions when you make changes.</p>
+  <p>Find <code>SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC</code>. If the element already exists, set <code>unbundled_spec=remote</code> in its value and keep the other entries. If it's missing, add this element inside the XML file's root element.</p>
   <pre><code>&lt;SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC&gt;type=inbox, bundled=false, unbundled_spec=remote&lt;/SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC&gt;</code></pre>
 </section>
 

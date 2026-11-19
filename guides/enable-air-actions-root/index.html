@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>How to enable S Pen Air Actions on a non-supported Samsung device with root | ThreeStars Apps</title>
-  <meta name="description" content="Install Air Command as a privileged system app, update One UI’s S Pen configuration, and pair an S Pen Pro for Air Actions.">
+  <meta name="description" content="Install Air Command as a privileged system app, update One UI&#39;s S Pen configuration, and pair an S Pen Pro for Air Actions.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://threestarsapps.com/guides/enable-air-actions-root/">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="ThreeStars Apps">
   <meta property="og:title" content="How to enable S Pen Air Actions on a non-supported Samsung device with root | ThreeStars Apps">
-  <meta property="og:description" content="Install Air Command as a privileged system app, update One UI’s S Pen configuration, and pair an S Pen Pro for Air Actions.">
+  <meta property="og:description" content="Install Air Command as a privileged system app, update One UI&#39;s S Pen configuration, and pair an S Pen Pro for Air Actions.">
   <meta property="og:url" content="https://threestarsapps.com/guides/enable-air-actions-root/">
   <meta property="og:image" content="https://threestarsapps.com/assets/images/social-card.png">
   <meta property="og:image:width" content="1200">
@@ -20,7 +20,7 @@
   <meta property="og:image:alt" content="ThreeStars Apps: KeyStar for Android buttons and PenStar for S Pen gestures">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to enable S Pen Air Actions on a non-supported Samsung device with root | ThreeStars Apps">
-  <meta name="twitter:description" content="Install Air Command as a privileged system app, update One UI’s S Pen configuration, and pair an S Pen Pro for Air Actions.">
+  <meta name="twitter:description" content="Install Air Command as a privileged system app, update One UI&#39;s S Pen configuration, and pair an S Pen Pro for Air Actions.">
   <meta name="twitter:image" content="https://threestarsapps.com/assets/images/social-card.png">
   <link rel="icon" href="/assets/images/brand-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/site.css">
@@ -77,13 +77,13 @@
 
 <section id="grant-nearby-devices">
   <h2>2. Grant the Nearby devices permission</h2>
-  <p>Open <strong>Settings → Apps</strong> and select <strong>Air Command</strong>. If it’s hidden, turn on <strong>Show system apps</strong>. Open <strong>Permissions → Nearby devices</strong> and tap <strong>Allow</strong>.</p>
+  <p>Open <strong>Settings → Apps</strong> and select <strong>Air Command</strong>. If it's hidden, turn on <strong>Show system apps</strong>. Open <strong>Permissions → Nearby devices</strong> and tap <strong>Allow</strong>.</p>
 </section>
 
 <section id="edit-floating-feature">
   <h2>3. Spoof S Pen support</h2>
-  <p>Back up <code>/system/etc/floating_feature.xml</code> before editing it. Preserve the file’s original owner, group, and permissions when you make changes.</p>
-  <p>Find <code>SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC</code>. If the element already exists, set <code>unbundled_spec=remote</code> in its value and keep the other entries. If it’s missing, add this element inside the XML file’s root element.</p>
+  <p>Back up <code>/system/etc/floating_feature.xml</code> before editing it. Preserve the file's original owner, group, and permissions when you make changes.</p>
+  <p>Find <code>SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC</code>. If the element already exists, set <code>unbundled_spec=remote</code> in its value and keep the other entries. If it's missing, add this element inside the XML file's root element.</p>
   <pre><code>&lt;SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC&gt;type=inbox, bundled=false, unbundled_spec=remote&lt;/SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC&gt;</code></pre>
 </section>
 
