@@ -1263,7 +1263,7 @@ button:disabled {
   border-radius: 4px;
 }
 
-.faq-answer pre {
+.article-body pre, .faq-answer pre {
   background: var(--wash);
   border-radius: 6px;
   margin: 10px 0 0;
@@ -1271,7 +1271,7 @@ button:disabled {
   white-space: pre-wrap;
 }
 
-.faq-answer pre code {
+.article-body pre code, .faq-answer pre code {
   background: transparent;
   padding: 0;
 }

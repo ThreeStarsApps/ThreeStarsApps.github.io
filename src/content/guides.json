@@ -36,7 +36,7 @@
     "category": "S Pen Mapping",
     "readTime": 5,
     "published": "2026-10-15",
-    "modified": "2026-10-15"
+    "modified": "2026-11-19"
   },
   {
     "slug": "shizuku-setup",
@@ -91,5 +91,18 @@
     "readTime": 8,
     "published": "2026-10-28",
     "modified": "2026-10-28"
+  },
+  {
+    "slug": "enable-air-actions-root",
+    "title": "How to enable S Pen Air Actions on a non-supported Samsung device with root",
+    "summary": "Setup Air Command as a privileged system app, update One UI's S Pen configuration, and pair an S Pen Pro for Air Actions.",
+    "answer": "To enable Air Actions, install Air Command as a privileged system app, grant Nearby devices access, enable remote S Pen support in the floating features XML, and set ADB options before pairing your S Pen Pro.",
+    "apps": [
+      "penstar"
+    ],
+    "category": "Advanced Setup",
+    "readTime": 4,
+    "published": "2026-11-19",
+    "modified": "2026-11-19"
   }
 ]

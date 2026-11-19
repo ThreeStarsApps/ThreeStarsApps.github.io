@@ -203,7 +203,7 @@
           "url": ""
         }
       ],
-      "modified": "2026-10-28"
+      "modified": "2026-11-19"
     },
     {
       "url": "/guides/map-android-volume-buttons/",
@@ -341,6 +341,26 @@
         },
         {
           "title": "KDE Connect physical remote",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "url": "/guides/enable-air-actions-root/",
+      "title": "How to enable S Pen Air Actions on a non-supported Samsung device with root | ThreeStars Apps",
+      "description": "Install Air Command as a privileged system app, update One UI’s S Pen configuration, and pair an S Pen Pro for Air Actions.",
+      "template": "guide",
+      "active": "guides",
+      "guide": "enable-air-actions-root",
+      "schema": "article",
+      "article": true,
+      "breadcrumbs": [
+        {
+          "title": "Guides",
+          "url": "/guides/"
+        },
+        {
+          "title": "Enable Air Actions with root",
           "url": ""
         }
       ]

@@ -1,0 +1,40 @@
+<section id="before-you-start">
+  <h2>Before you start</h2>
+  <p><strong>Tested on One UI 6.</strong> This is an advanced guide for rooted Samsung devices. Depending on your device and ROM, you may need additional steps to get Air Actions working.</p>
+  <p>You will need root access, and an S Pen Pro.</p>
+</section>
+
+<section id="install-air-command">
+  <h2>1. Install Air Command as a privileged system app</h2>
+  <p>Download <a href="https://www.apkmirror.com/apk/samsung-electronics-co-ltd/samsung-air-command/samsung-air-command-6-1-40-1-release/">Samsung Air Command 6.1.40.1 from APKMirror</a>. The APK supports Android 9 and later.</p>
+  <p>Note that newer Air Command releases can fail to install with this error:</p>
+  <pre><code>Failure [-3001: INSTALL_FAILED_REJECTED_BY_BUILDTYPE]</code></pre>
+  <p>If 6.1.40.1 also gives you the same error, try a different version, but keep in mind the version that will be installed should contain S Pen Pro support.</p>
+  <p>With Magisk, use a systemless module that places the APK under <code>/system/priv-app/</code>. Install and enable the module in Magisk, then restart so Android loads Air Command as a privileged system app. Other root setups have their own ways to install privileged system apps.</p>
+</section>
+
+<section id="grant-nearby-devices">
+  <h2>2. Grant the Nearby devices permission</h2>
+  <p>Open <strong>Settings → Apps</strong> and select <strong>Air Command</strong>. If it’s hidden, turn on <strong>Show system apps</strong>. Open <strong>Permissions → Nearby devices</strong> and tap <strong>Allow</strong>.</p>
+</section>
+
+<section id="edit-floating-feature">
+  <h2>3. Spoof S Pen support</h2>
+  <p>Back up <code>/system/etc/floating_feature.xml</code> before editing it. Preserve the file’s original owner, group, and permissions when you make changes.</p>
+  <p>Find <code>SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC</code>. If the element already exists, set <code>unbundled_spec=remote</code> in its value and keep the other entries. If it’s missing, add this element inside the XML file’s root element.</p>
+  <pre><code>&lt;SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC&gt;type=inbox, bundled=false, unbundled_spec=remote&lt;/SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC&gt;</code></pre>
+</section>
+
+<section id="set-adb-values">
+  <h2>4. Set the S Pen options with ADB</h2>
+  <p>Using ADB, run these commands:</p>
+  <pre><code>adb shell settings put system pen_usage_detected 1
+adb shell settings put system pen_digitizer_enabled 1</code></pre>
+</section>
+
+<section id="pair-s-pen-pro">
+  <h2>5. Restart and pair your S Pen Pro</h2>
+  <p>Restart the device, then reopen <code>/system/etc/floating_feature.xml</code> and confirm the change persisted.</p>
+  <p>Open <strong>Settings → Advanced features → S Pen → Air Actions</strong>. If everything was successful, you will be able to pair an S Pen Pro and start using Air Actions.</p>
+  <p>For full control over Air Actions, use <a href="/penstar/">PenStar</a>.</p>
+</section>
