@@ -25,7 +25,7 @@
   <link rel="icon" href="/assets/images/brand-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/site.css">
   <script src="/assets/js/site.js" defer></script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://threestarsapps.com/#organization", "name": "ThreeStars Apps", "url": "https://threestarsapps.com/", "logo": "https://threestarsapps.com/assets/images/brand-mark.svg", "email": "threestarsapps@gmail.com", "founder": {"@type": "Person", "name": "Enrique Anthony Galea"}}, {"@type": "TechArticle", "headline": "Set up KeyStar and PenStar with Shizuku", "description": "Set up log access with Shizuku, understand the ADB and wireless debugging alternatives, and get your mappings ready after a reboot.", "url": "https://threestarsapps.com/guides/shizuku-setup/", "mainEntityOfPage": "https://threestarsapps.com/guides/shizuku-setup/", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "author": {"@type": "Person", "name": "Enrique Anthony Galea", "url": "https://threestarsapps.com/about/"}, "publisher": {"@id": "https://threestarsapps.com/#organization"}, "image": "https://threestarsapps.com/assets/images/social-card.png", "about": [{"@id": "https://threestarsapps.com/keystar/#app"}, {"@id": "https://threestarsapps.com/penstar/#app"}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://threestarsapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://threestarsapps.com/guides/"}, {"@type": "ListItem", "position": 3, "name": "Shizuku setup", "item": "https://threestarsapps.com/guides/shizuku-setup/"}]}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://threestarsapps.com/#organization", "name": "ThreeStars Apps", "url": "https://threestarsapps.com/", "logo": "https://threestarsapps.com/assets/images/brand-mark.svg", "email": "threestarsapps@gmail.com", "founder": {"@type": "Person", "name": "Enrique Anthony Galea"}}, {"@type": "TechArticle", "headline": "Set up KeyStar and PenStar with Shizuku", "description": "Set up log access with Shizuku, understand the ADB and wireless debugging alternatives, and get your mappings ready after a reboot.", "url": "https://threestarsapps.com/guides/shizuku-setup/", "mainEntityOfPage": "https://threestarsapps.com/guides/shizuku-setup/", "datePublished": "2026-10-15", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Enrique Anthony Galea", "url": "https://threestarsapps.com/about/"}, "publisher": {"@id": "https://threestarsapps.com/#organization"}, "image": "https://threestarsapps.com/assets/images/social-card.png", "about": [{"@id": "https://threestarsapps.com/keystar/#app"}, {"@id": "https://threestarsapps.com/penstar/#app"}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://threestarsapps.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://threestarsapps.com/guides/"}, {"@type": "ListItem", "position": 3, "name": "Shizuku setup", "item": "https://threestarsapps.com/guides/shizuku-setup/"}]}]}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -53,13 +53,13 @@
   <p class="lead">Set up log access with Shizuku, understand the ADB and wireless debugging alternatives, and get your mappings ready after a reboot.</p>
   <div class="article-meta">
     <span>By <a href="/about/">Enrique Anthony Galea</a></span>
-    <span>Updated <time datetime="2026-10-15">15 October 2026</time></span>
+    <span>Updated <time datetime="2026-11-20">20 November 2026</time></span>
     <span>5 min read</span>
   </div>
 </header>
 <div class="wrap article-layout">
   <article class="article-body">
-    <p class="answer">KeyStar and PenStar work without root. Setup supports Shizuku, ADB, or wireless debugging. For ongoing use, the recommended Shizuku setup runs logcat through Shizuku and helps avoid repeated one-time log-access prompts. The startup options below refer to the Shizuku fork linked by the developer.</p>
+    <p class="answer">KeyStar and PenStar work without root. Setup supports Shizuku, ADB, or wireless debugging. The recommended setup uses the &#34;Use Shizuku&#34; option to help avoid repeated one-time log-access prompts. The startup options below refer to the Shizuku fork linked by the developer.</p>
     <section id="choose-method">
   <h2>Choose your setup method</h2>
 <p>Follow the instructions inside KeyStar or PenStar for the access your version needs. You have three supported setup routes:</p>
@@ -81,11 +81,11 @@
 
 <section id="connect-app">
   <h2>Connect KeyStar or PenStar to Shizuku</h2>
-<ol><li><strong>Open your mapping app's settings.</strong> Enable <strong>Run logcat through Shizuku</strong>.</li>
+<ol><li><strong>Open your mapping app's settings.</strong> Enable <strong>Use Shizuku</strong>.</li>
 <li><strong>Allow the Shizuku access request.</strong> Follow any access prompt shown by Shizuku or the mapping app.</li>
 <li><strong>Turn the service on.</strong> This starts the service with the selected log-access method.</li>
 <li><strong>Check the result.</strong> With the setup working, the app should no longer show the one-time log-access dialog when you enable it. Try a simple button or S Pen action.</li></ol>
-<p>If you use both apps, enable Run logcat through Shizuku in each app separately. Continue to grant any other permission required by a particular action; log access does not replace every app permission.</p>
+<p>If you use both apps, enable <strong>Use Shizuku</strong> in each app separately. Continue to grant any other permission required by a particular action; log access does not replace every app permission.</p>
 </section>
 
 <section id="after-reboot">

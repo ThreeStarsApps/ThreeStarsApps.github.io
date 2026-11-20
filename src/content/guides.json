@@ -42,7 +42,7 @@
     "slug": "shizuku-setup",
     "title": "Set up KeyStar and PenStar with Shizuku",
     "summary": "Set up log access with Shizuku, understand the ADB and wireless debugging alternatives, and get your mappings ready after a reboot.",
-    "answer": "KeyStar and PenStar work without root. Setup supports Shizuku, ADB, or wireless debugging. For ongoing use, the recommended Shizuku setup runs logcat through Shizuku and helps avoid repeated one-time log-access prompts. The startup options below refer to the Shizuku fork linked by the developer.",
+    "answer": "KeyStar and PenStar work without root. Setup supports Shizuku, ADB, or wireless debugging. The recommended setup uses the \"Use Shizuku\" option to help avoid repeated one-time log-access prompts. The startup options below refer to the Shizuku fork linked by the developer.",
     "apps": [
       "keystar",
       "penstar"
@@ -50,7 +50,7 @@
     "category": "Setup",
     "readTime": 5,
     "published": "2026-10-15",
-    "modified": "2026-10-15"
+    "modified": "2026-11-20"
   },
   {
     "slug": "button-mapping-tasker",
@@ -77,7 +77,7 @@
     "category": "Privacy",
     "readTime": 8,
     "published": "2026-10-21",
-    "modified": "2026-10-21"
+    "modified": "2026-11-20"
   },
   {
     "slug": "kde-connect-physical-remote",

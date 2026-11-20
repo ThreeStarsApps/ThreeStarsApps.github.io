@@ -30,7 +30,7 @@
     <li><strong>Install the fork.</strong> Use the <a href="https://github.com/thedjchi/Shizuku/releases">thedjchi/Shizuku releases page</a>. These instructions use that fork's settings.</li>
     <li><strong>Pair and start Shizuku.</strong> Follow its Wireless Debugging instructions while connected to Wi-Fi. Confirm that its service is running; pairing alone is not enough.</li>
     <li><strong>Enable TCP mode in Shizuku settings.</strong> Apply any requested service restart. Note the configured TCP port: use <code>5555</code> in the example below if that is the port your setup uses.</li>
-    <li><strong>Connect KeyStar.</strong> Enable <strong>Run logcat through Shizuku</strong> in KeyStar settings, then turn the KeyStar service on again, allowing any Shizuku access request.</li>
+    <li><strong>Connect KeyStar.</strong> Enable <strong>Use Shizuku</strong> in KeyStar settings, then turn the KeyStar service on again, allowing any Shizuku access request.</li>
   </ol>
   <p>The <a href="/guides/shizuku-setup/">Shizuku setup guide</a> covers log access and the fork's Start on boot and Watchdog options. Those options help with startup and recovery, but check readiness after every reboot.</p>
   <p>Tasker connects to the ADB listener separately. Giving KeyStar Shizuku permission does not automatically authorise Tasker's ADB connection. Use the TCP port configured in Shizuku, rather than the temporary Wireless Debugging pairing port.</p>
