@@ -29,14 +29,14 @@
     "slug": "map-s-pen-button-air-actions",
     "title": "How to map S Pen buttons and Air Actions",
     "summary": "Use PenStar to assign your own actions to S Pen clicks and gestures, including in apps without built-in Air Action support.",
-    "answer": "PenStar maps S Pen clicks and Air Actions on Samsung devices that support Air Actions and run Android 8.1 or later. Create an App Action, choose the apps it applies to, and assign actions to gestures. All features and two App Actions are free. No root is needed.",
+    "answer": "PenStar maps S Pen clicks and Air Actions on Android 8.1 or later. On devices without built-in Air Actions, pair an S Pen Pro directly in PenStar. Create an App Action, choose the apps it applies to, and assign actions to gestures. All features and two App Actions are free. No root is needed.",
     "apps": [
       "penstar"
     ],
     "category": "S Pen Mapping",
     "readTime": 5,
     "published": "2026-10-15",
-    "modified": "2026-11-19"
+    "modified": "2026-11-20"
   },
   {
     "slug": "shizuku-setup",
@@ -64,7 +64,7 @@
     "category": "Automation",
     "readTime": 4,
     "published": "2026-10-15",
-    "modified": "2026-10-15"
+    "modified": "2026-11-20"
   },
   {
     "slug": "android-lock-screen-shutdown-shortcut",

@@ -75,11 +75,11 @@
     "compatibility": [
       [
         "Android",
-        "Android 8.1 or later. Available features can vary by Android version."
+        "PenStar works on any device running Android 8.1 or later. Available features can vary by Android version."
       ],
       [
         "Hardware",
-        "A Samsung device with Bluetooth S Pen support is required."
+        "If your device doesn't have built-in Air Actions, you'll need an S Pen Pro to use Air Actions."
       ],
       [
         "Permissions",

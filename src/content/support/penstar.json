@@ -3,7 +3,13 @@
     "heading": "headingSupportedDevices",
     "question": "What devices does PenStar support?",
     "anchor": "collapseSupportedDevices",
-    "body": "PenStar supports Samsung devices that can use the Bluetooth S Pen running Android 8.1 and\n                            later. This will mainly be flagship devices and tablets from 2018 and later.<br/><br/>\n                            Note that some features might not be supported on certain Android versions. For example, the\n                            Screenshot action cannot be used on Android 8.1."
+    "body": "<p>PenStar supports all devices running Android 8.1 or later. For help using Air Actions, see <a href=\"#collapseBluetoothSPen\">My device doesn't have a Bluetooth S Pen. Can I still use PenStar?</a></p><p>Some features depend on your Android version. For example, the Screenshot action is unavailable on Android 8.1.</p>"
+  },
+  {
+    "heading": "headingBluetoothSPen",
+    "question": "My device doesn't have a Bluetooth S Pen. Can I still use PenStar?",
+    "anchor": "collapseBluetoothSPen",
+    "body": "<p>Yes. If your device doesn't have built-in Air Actions, you'll need to buy an S Pen Pro and pair it directly in PenStar to use Air Actions. All gestures are supported.</p>"
   },
   {
     "heading": "headingRequiredPermissions",
