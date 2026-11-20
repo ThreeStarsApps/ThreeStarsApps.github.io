@@ -12,6 +12,12 @@
     "body": "<p>Yes. If your device doesn't have built-in Air Actions, you'll need to buy an S Pen Pro and pair it directly in PenStar to use Air Actions. All gestures are supported.</p>"
   },
   {
+    "heading": "headingSPenProButtons",
+    "question": "How do I use the buttons on the S Pen Pro?",
+    "anchor": "collapseSPenProButtons",
+    "body": "<p>The S Pen Pro has two buttons. The raised button is for S Pen actions and gestures. Use the button next to it to manage Bluetooth connections.</p><ul><li><strong>Press once.</strong> Start a search in PenStar, then press to discover the pen. When connecting, press to complete the connection. The LED flashes blue.</li><li><strong>Press twice.</strong> If the pen is connected, this disconnects it so you can switch to another device.</li><li><strong>Hold for 3 seconds.</strong> This puts the pen in pairing mode. The LED flashes red, green, and blue.</li></ul><p>To reset the S Pen Pro, hold both buttons for 7 seconds.</p>"
+  },
+  {
     "heading": "headingRequiredPermissions",
     "question": "Why does PenStar require so many permissions?",
     "anchor": "collapseRequiredPermissions",
